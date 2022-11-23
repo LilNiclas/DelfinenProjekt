@@ -7,6 +7,9 @@ public class Member {
     private boolean membershipStatus;
     private int membershipNumber;
 
+    public Member(){
+    }
+
     public Member(String firstName, String lastName, String swimType, int age, boolean membershipStatus, int membershipNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -64,5 +67,9 @@ public class Member {
         this.membershipNumber = membershipNumber;
     }
 
+    public String toString() {
+        return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
+               swimType + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + membershipStatus + " \n " + "Medlemsnummer: " + membershipNumber + " \n ");
+    }
 
 }

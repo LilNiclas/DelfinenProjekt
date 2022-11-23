@@ -27,6 +27,8 @@ public class Userinterface {
                         deleteMembers();
                     } else if (menuChoice == 6) {
                         saveMembers();
+                    } else if (menuChoice == 7) {
+                        loadMembers();
                     } else if (menuChoice == 9) {
                         endProgram();
                     }

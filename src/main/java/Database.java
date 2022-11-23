@@ -34,5 +34,39 @@ public class Database {
         return database;
     }
 
+    public ArrayList<Member> searchMembersFirstName(String searchTerm) {
+
+        ArrayList<Member> searchResult = new ArrayList<>();
+
+        for (Member member: database) {
+            if (member.getFirstName().toLowerCase().contains(searchTerm.toLowerCase().trim())) {
+                searchResult.add(member);
+            }
+        }
+        return searchResult;
+    }
+
+    public ArrayList<Member> searchMembersMembershipNumber(int searchNumber) {
+
+        ArrayList<Member> searchResult = new ArrayList<>();
+
+        for (Member member: database) {
+            if (member.getMembershipNumber()==searchNumber) {
+                searchResult.add(member);
+            }
+        }
+        return searchResult;
+    }
+
+    public boolean deleteMembers(Member member) {
+        boolean deleteMember = database.remove(member);
+        return deleteMember;
+    }
+
+    public void addAll(ArrayList<Member> members) {
+        database.addAll(members);
+    }
+
+
 
 }
