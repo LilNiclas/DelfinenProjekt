@@ -92,7 +92,95 @@ public class Userinterface {
     }
 
     public void editMembers() {
+        boolean writingError;
 
+        System.out.println("Vælg det medlem du vil redigere: ");
+
+        for (int i = 0; i < controller.getMembers().size(); i++) {
+            System.out.println(i + 1 + ")" + controller.getMembers().get(i));
+        }
+
+        System.out.println("Indtast nummeret på det valgte medlem: ");
+        int number;
+        Member editMember = null;
+        do {
+            try {
+                number = scanner.nextInt();
+                scanner.nextLine();
+                writingError = false;
+                editMember = controller.getMembers().get(number - 1);
+            } catch (InputMismatchException ime) {
+                System.out.println("Skriv kun numre, tak!");
+                scanner.nextLine();
+                writingError = true;
+
+            } catch (IndexOutOfBoundsException ibe) {
+                System.out.println("Indtast kun numre du kan se!");
+                writingError = true;
+            }
+        } while (writingError == true);
+
+
+        System.out.println("Redigere medlemsinformation: " + editMember);
+        System.out.println("Indskriv ny data. Vil du ikke redigere tryk Enter.");
+
+        System.out.println("Fornavn: " + editMember.getFirstName());
+        String newName = scanner.nextLine();
+        if (!newName.isEmpty())
+            editMember.setFirstName(newName);
+
+
+        System.out.println("Efternavn: " + editMember.getLastName());
+        String newLName = scanner.nextLine();
+        if (!newLName.isEmpty())
+            editMember.setLastName(newLName);
+
+
+        System.out.println("Svømmetype: " + editMember.getSwimType());
+        String newSwimtype = scanner.nextLine();
+        if (!newSwimtype.isEmpty())
+            editMember.setSwimType(newSwimtype);
+
+
+        System.out.println("Alder: " + editMember.getAge());
+        do {
+            String newAge = scanner.nextLine().trim();
+            if (!newAge.isEmpty()) {
+                try {
+                    editMember.setAge(Integer.parseInt(newAge));
+                    writingError = false;
+
+                } catch (NumberFormatException nfe) {
+                    System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                    writingError = true;
+                }
+            }
+        } while (writingError == true);
+
+        System.out.println("Medlemsstatus: " + editMember.isMembershipStatus());
+        String newMembershipStatus = scanner.nextLine();
+
+        if (!newMembershipStatus.isEmpty()) {
+            while (!newMembershipStatus.equals("p") && !newMembershipStatus.equals("a")) {
+                System.out.println("Fejl. Tast \"a\" eller \"p\". ");
+                newMembershipStatus = scanner.nextLine();
+
+        System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
+        String newMembershipNumber = scanner.nextLine();
+        if (!newMembershipNumber.isEmpty())
+            editMember.setMembershipNumber(Integer.parseInt(newMembershipNumber));
+
+
+            }
+
+            boolean membershipStatus;
+            if (newMembershipStatus.equals("j")) {
+                membershipStatus = true;
+            } else {
+                membershipStatus = false;
+            }
+            editMember.setMembershipStatus(membershipStatus);
+        }
     }
 
     public void seeMembers() {
@@ -119,19 +207,82 @@ public class Userinterface {
 
     public void searchMembers() {
 
+        if (menu == 1) {
+            System.out.print("Indtast fornavn: ");
+            scanner.nextLine();
+            String searchTerm = scanner.nextLine();
+            System.out.println("");
+
+            ArrayList<Member> searchResult = controller.searchMembersFirstName(searchTerm);
+
+            if (searchResult.isEmpty()) {
+                System.out.println("\u001B[4mIngen medlemmer fundet\u001B[0m");
+                System.out.println("");
+            } else {
+                System.out.println("\u001B[1mMedlemmer fundet\u001B[0m");
+                for (Member member : searchResult) {
+                    System.out.println("Navn: " + member.getFirstName());
+                    System.out.println("Efternavn: " + member.getLastName());
+                    System.out.println("Svømmetype: " + member.getSwimType());
+                    if (member.isMembershipStatus() == true)
+                        System.out.println("Er medlem aktiv: Ja");
+                    else
+                        System.out.println("Er medlem aktiv: Nej");
+                    System.out.println("Alder: " + member.getAge());
+                    System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+                    System.out.println("");
+                }
+            }
+        } else if (menu == 2) {
+            System.out.print("Indtast medlemsnummer: ");
+            int searchNumber = scanner.nextInt();
+            System.out.println("");
+
+            ArrayList<Member> searchResult = controller.searchMembersMembershipNumber(searchNumber);
+
+            if (searchResult.isEmpty()) {
+                System.out.println("\u001B[4mIngen medlemmer fundet\u001B[0m");
+                System.out.println("");
+            } else {
+                System.out.println("\u001B[1mMedlemmer fundet\u001B[0m");
+                for (Member member : searchResult) {
+                    System.out.println("Navn: " + member.getFirstName());
+                    System.out.println("Efternavn: " + member.getLastName());
+                    System.out.println("Svømmetype: " + member.getSwimType());
+                    if (member.isMembershipStatus() == true)
+                        System.out.println("Er medlem aktiv: Ja");
+                    else
+                        System.out.println("Er medlem aktiv: Nej");
+                    System.out.println("Alder: " + member.getAge());
+                    System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+                    System.out.println("");
+                }
+            }
+        }
     }
 
     public void deleteMembers() {
+        boolean delete = false;
+        System.out.println("\u001B[1mFjern medlemmer fra klubben\u001B[0m");
+        for (int i = 0; i < controller.getMembers().size(); i++)
+            System.out.println(i + 1 + ": " + controller.getMembers().get(i));
 
+        System.out.println("Indtast nummeret tilsvarende til medlemmet der skal fjerens");
+        int number = scanner.nextInt();
+        scanner.nextLine();
+
+        Member deleteMember = controller.getMembers().get(number - 1);
+        controller.deleteMember(deleteMember);
+        System.out.println("Det udvalgte medlem er fjernet fra databasen");
     }
 
     public void saveMembers() {
-
+        controller.saveMembers();
+        System.out.println("Indtastede information er gemt");
     }
 
     public void endProgram() {
         System.out.println("lukker programmet... farvel!");
         System.exit(9);
     }
-
 }

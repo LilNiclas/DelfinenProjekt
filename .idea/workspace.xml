@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="printer liste over medlemmere" />
-    <list id="10bf362a-bd92-41f4-bdc2-4843fb146490" name="Changes by kjartanleander" comment="" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla" />
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="printer liste over medlemmere">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
+    <list id="10bf362a-bd92-41f4-bdc2-4843fb146490" name="Changes by kjartanleander" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+    </list>
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
     <list id="96aeb98f-12ff-4aea-b388-6889aa93c2e4" name="Changes by tobias" comment="Changes by tobias">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +40,42 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Database.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="15" changelist="10bf362a-bd92-41f4-bdc2-4843fb146490" />
+        <range start1="6" end1="7" start2="16" end2="17" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="11" end1="11" start2="21" end2="22" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="18" end1="18" start2="29" end2="30" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="23" end1="23" start2="35" end2="69" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Controller.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="10bf362a-bd92-41f4-bdc2-4843fb146490" />
+        <range start1="3" end1="4" start2="4" end2="13" changelist="10bf362a-bd92-41f4-bdc2-4843fb146490" />
+        <range start1="18" end1="18" start2="27" end2="55" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="29" end1="29" start2="30" end2="32" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="44" end1="46" start2="47" end2="49" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="47" end1="50" start2="50" end2="54" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="94" end1="94" start2="98" end2="129" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="95" end1="95" start2="130" end2="187" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="120" end1="120" start2="212" end2="219" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="121" end1="121" start2="220" end2="272" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="124" end1="124" start2="275" end2="279" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="125" end1="125" start2="280" end2="287" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="128" end1="129" start2="290" end2="292" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="130" end1="130" start2="293" end2="298" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="135" end1="136" start2="303" end2="303" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="137" end1="138" start2="304" end2="304" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669034998069</updated>
       <workItem from="1669034999268" duration="3250000" />
-      <workItem from="1669198241983" duration="3670000" />
+      <workItem from="1669198241983" duration="9948000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -116,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669201919994</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes by tobias">
+      <created>1669201922578</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201922578</updated>
+    </task>
+    <task id="LOCAL-00010" summary="printer liste over medlemmere">
+      <created>1669201927146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201927146</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,10 +200,10 @@
     <MESSAGE value="Hey" />
     <MESSAGE value="Startet på UI" />
     <MESSAGE value="Lavet metoder til createMember, lavet testdata osv." />
-    <MESSAGE value="printer liste over medlemmere" />
     <MESSAGE value="Changes by nicla" />
     <MESSAGE value="Changes by tobias" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by tobias" />
+    <MESSAGE value="printer liste over medlemmere" />
+    <option name="LAST_COMMIT_MESSAGE" value="printer liste over medlemmere" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
