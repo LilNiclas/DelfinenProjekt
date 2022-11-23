@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Lavet metoder til createMember, lavet testdata osv.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="printer liste over medlemmere" />
     <list id="10bf362a-bd92-41f4-bdc2-4843fb146490" name="Changes by kjartanleander" comment="" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-    </list>
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla" />
     <list id="96aeb98f-12ff-4aea-b388-6889aa93c2e4" name="Changes by tobias" comment="Changes by tobias">
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
@@ -32,15 +27,6 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
-      <ranges>
-        <range start1="29" end1="29" start2="29" end2="31" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="96" end1="97" start2="98" end2="116" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
-        <range start1="110" end1="110" start2="129" end2="133" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669034998069</updated>
       <workItem from="1669034999268" duration="3250000" />
-      <workItem from="1669198241983" duration="3325000" />
+      <workItem from="1669198241983" duration="3670000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -116,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669201307360</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="printer liste over medlemmere">
+      <created>1669201915885</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201915885</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes by nicla">
+      <created>1669201919994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201919994</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,9 +136,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hey" />
     <MESSAGE value="Startet på UI" />
-    <MESSAGE value="Changes by tobias" />
     <MESSAGE value="Lavet metoder til createMember, lavet testdata osv." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lavet metoder til createMember, lavet testdata osv." />
+    <MESSAGE value="printer liste over medlemmere" />
+    <MESSAGE value="Changes by nicla" />
+    <MESSAGE value="Changes by tobias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by tobias" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
