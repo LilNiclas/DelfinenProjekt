@@ -3,7 +3,10 @@ import java.util.Scanner;
 
 public class Userinterface {
     Scanner scanner = new Scanner(System.in);
-    public void Start () {
+    Controller controller = new Controller();
+
+    public void start() {
+        controller.createTestData();
         System.out.println("Velkommen til Delfin svømmeklub");
         boolean menuError;
 
