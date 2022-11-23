@@ -4,6 +4,16 @@ public class Database {
 
     private ArrayList<Member> database = new ArrayList<>();
 
+    private boolean changesMade = true;
+
+    public boolean isChangesMade() {
+        return changesMade;
+    }
+
+    public void setChangesMade(boolean changesMade) {
+        this.changesMade = changesMade;
+    }
+
     public Member createMember(String firstName, String lastName, String swimType, int age, boolean membershipStatus, int membershipNumber) {
 
         Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
