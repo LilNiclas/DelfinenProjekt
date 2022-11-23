@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Hey">
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på UI">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
+    <list id="10bf362a-bd92-41f4-bdc2-4843fb146490" name="Changes by kjartanleander" comment="" />
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="" />
+    <list id="96aeb98f-12ff-4aea-b388-6889aa93c2e4" name="Changes by tobias" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
@@ -24,8 +31,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="4" end1="5" start2="5" end2="9" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="7" end1="8" start2="11" end2="12" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="13" end1="15" start2="17" end2="29" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="16" end1="16" start2="30" end2="35" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="17" end1="19" start2="36" end2="38" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="20" end1="21" start2="39" end2="40" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="32" end1="32" start2="51" end2="111" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HrEr4sVvuScPN0UKx3YaflojqQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,7 +65,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "copyright.filetypes.JAVA"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +77,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669034998069</updated>
-      <workItem from="1669034999268" duration="2436000" />
+      <workItem from="1669034999268" duration="3250000" />
+      <workItem from="1669198241983" duration="3009000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -65,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669035623574</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Startet på UI">
+      <created>1669108575078</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669108575078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +120,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hey" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hey" />
+    <MESSAGE value="Startet på UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Startet på UI" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
