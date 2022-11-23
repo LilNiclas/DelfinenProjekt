@@ -25,4 +25,32 @@ public class Controller {
     }
 
 
+    public ArrayList<Member> searchMembersFirstName(String searchTerm) {
+        return database.searchMembersFirstName(searchTerm);
+    }
+
+    public ArrayList<Member> searchMembersMembershipNumber(int searchNumber) {
+        return database.searchMembersMembershipNumber(searchNumber);
+    }
+
+    public void saveMembers() {
+        try {
+            fileHandler.saveData(database.getMembers());
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+    public void loadMembers() {
+        try {
+            ArrayList<Member> members = fileHandler.loadData();
+            database.addAll(members);
+        } catch (FileNotFoundException e) {
+        }
+    }
+
+
+    public boolean deleteMember(Member member) {
+        return database.deleteMembers(member);
+    }
+
 }

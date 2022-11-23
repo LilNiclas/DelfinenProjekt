@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -44,12 +45,13 @@ public class Userinterface {
 
     public void startPage() {
         System.out.println("""
-                Tast 1) for oprettelse af nye svømmere.
-                Tast 2) for redigering af eksisterende svømmere.
+                Tast 1) for oprettelse af nye medlemmer.
+                Tast 2) for redigering af eksisterende medlemmer.
                 Tast 3) for udskriving af hele listen.
-                Tast 4) for at søge efter svømmer.
-                Tast 5) for at slette en svømmer
-                Tast 6) for at gemme al information
+                Tast 4) for at søge efter medlemmer.
+                Tast 5) for at slette en medlemmer.
+                Tast 6) for at gemme medlemmer i systemet.
+                Tast 7) for at load medlemmer.
                 Tast 9) for at afslutte.
                 """);
     }
@@ -208,6 +210,13 @@ public class Userinterface {
     }
 
     public void searchMembers() {
+        System.out.println("\u001B[1mSøg efter medlemmer\u001B[0m");
+
+        System.out.println("""
+                Tast 1) for at søge efter medlem ved fornavn.
+                Tast 2) for at søge efter medlem ved medlemsnummer.
+                """);
+        int menu = scanner.nextInt();
 
         if (menu == 1) {
             System.out.print("Indtast fornavn: ");
@@ -281,6 +290,11 @@ public class Userinterface {
     public void saveMembers() {
         controller.saveMembers();
         System.out.println("Indtastede information er gemt");
+    }
+
+    public void loadMembers () {
+        controller.loadMembers();
+        System.out.println("Data loaded");
     }
 
     public void endProgram() {
