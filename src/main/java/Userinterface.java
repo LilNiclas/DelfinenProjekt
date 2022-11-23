@@ -96,7 +96,25 @@ public class Userinterface {
     }
 
     public void seeMembers() {
-        System.out.println("Liste over medlemmer: " + "\n" + "-".repeat(21));
+        System.out.println("\u001B[1mRegistreret medlemmer\u001B[0m");
+
+        if (controller.getMembers().isEmpty()) {
+            System.out.println("\u001B[4mIngen medlemmer fundet\u001B[0m");
+            System.out.println("");
+        } else {
+            for (Member member : controller.getMembers()) {
+                System.out.println("Navn: " + member.getFirstName());
+                System.out.println("Efternavn: " + member.getLastName());
+                System.out.println("Svømmetype: " + member.getSwimType());
+                if (member.isMembershipStatus() == true)
+                    System.out.println("Er medlem aktiv: Ja");
+                else
+                    System.out.println("Er medlem aktiv: Nej");
+                System.out.println("Alder: " + member.getAge());
+                System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+                System.out.println("");
+            }
+        }
     }
 
     public void searchMembers() {
