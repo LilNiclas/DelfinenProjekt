@@ -27,6 +27,8 @@ public class Userinterface {
                         deleteMembers();
                     } else if (menuChoice == 6) {
                         saveMembers();
+                    } else if (menuChoice == 9) {
+                        endProgram();
                     }
                     menuError = false;
                 } catch (InputMismatchException ime) {
@@ -58,7 +60,7 @@ public class Userinterface {
         System.out.println("Indtast efternavn");
         String lastName = scanner.nextLine();
 
-        System.out.println("Indtast svømmetype(Motionist eller konkurrencesvømer)");
+        System.out.println("Indtast svømmetype(Motionist eller konkurrencesvømmer)");
         String swimType = scanner.nextLine();
 
         System.out.println("Indtast alder");
@@ -107,6 +109,11 @@ public class Userinterface {
 
     public void saveMembers() {
 
+    }
+
+    public void endProgram() {
+        System.out.println("lukker programmet... farvel!");
+        System.exit(9);
     }
 
 }

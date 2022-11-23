@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på UI">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Lavet metoder til createMember, lavet testdata osv.">
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
     <list id="10bf362a-bd92-41f4-bdc2-4843fb146490" name="Changes by kjartanleander" comment="" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="" />
-    <list id="96aeb98f-12ff-4aea-b388-6889aa93c2e4" name="Changes by tobias" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+    </list>
+    <list id="96aeb98f-12ff-4aea-b388-6889aa93c2e4" name="Changes by tobias" comment="Changes by tobias">
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,14 +36,9 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
       <ranges>
-        <range start1="0" end1="0" start2="0" end2="1" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="4" end1="5" start2="5" end2="9" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
-        <range start1="7" end1="8" start2="11" end2="12" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="13" end1="15" start2="17" end2="29" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="16" end1="16" start2="30" end2="35" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="17" end1="19" start2="36" end2="38" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="20" end1="21" start2="39" end2="40" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="32" end1="32" start2="51" end2="111" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="29" end1="29" start2="29" end2="31" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="96" end1="97" start2="98" end2="116" changelist="96aeb98f-12ff-4aea-b388-6889aa93c2e4" />
+        <range start1="110" end1="110" start2="129" end2="133" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
       </ranges>
     </file>
   </component>
@@ -78,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669034998069</updated>
       <workItem from="1669034999268" duration="3250000" />
-      <workItem from="1669198241983" duration="3009000" />
+      <workItem from="1669198241983" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -101,7 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669108575078</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lavet metoder til createMember, lavet testdata osv.">
+      <created>1669201299160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201299160</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes by tobias">
+      <created>1669201303659</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201303659</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lavet metoder til createMember, lavet testdata osv.">
+      <created>1669201307360</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669201307360</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +136,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hey" />
     <MESSAGE value="Startet på UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startet på UI" />
+    <MESSAGE value="Changes by tobias" />
+    <MESSAGE value="Lavet metoder til createMember, lavet testdata osv." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lavet metoder til createMember, lavet testdata osv." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
