@@ -65,7 +65,7 @@ public class Userinterface {
         String lastName = scanner.nextLine();
 
         System.out.println("Indtast svømmetype(Motionist eller konkurrencesvømmer)");
-        String swimType = scanner.nextLine();
+        boolean swimType = Boolean.parseBoolean(scanner.nextLine());
 
         System.out.println("Indtast alder");
         int age = Integer.parseInt(scanner.nextLine());
@@ -147,7 +147,7 @@ public class Userinterface {
         System.out.println("Svømmetype: " + editMember.getSwimType());
         String newSwimtype = scanner.nextLine();
         if (!newSwimtype.isEmpty())
-            editMember.setSwimType(newSwimtype);
+            editMember.setSwimType(Boolean.parseBoolean(newSwimtype));
 
 
         System.out.println("Alder: " + editMember.getAge());
@@ -315,7 +315,7 @@ public class Userinterface {
 
     public void saveMembers() {
         controller.saveMembers();
-        System.out.println("Indtastede information er gemt");
+        System.out.println("Indtastede information er gemt" + "\n");
     }
 
     public void loadMembers () {

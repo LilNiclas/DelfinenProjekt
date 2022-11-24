@@ -12,8 +12,8 @@ public class Controller {
         fileHandler.setDatabase(database);
     }
 
-    public void createMember(String firstName, String lastName, String swimType, int age, boolean aktivitetsForm, int memberShipNumber) {
-        database.createMember(firstName, lastName, swimType, age, aktivitetsForm, memberShipNumber);
+    public void createMember(String firstName, String lastName, boolean swimType, int age, boolean aktivitetsForm, int memberShipNumber, boolean membershipAgeGroup) {
+        database.createMember(firstName, lastName, swimType, age, aktivitetsForm, memberShipNumber, membershipAgeGroup);
     }
 
     public void createTestData() {

@@ -26,14 +26,17 @@ public class FileHandler {
                 output.print(";");
                 output.print(member.getLastName());
                 output.print(";");
-                output.print(member.getSwimType());
+                output.print(member.isSwimType());
                 output.print(";");
                 output.print(member.getAge());
                 output.print(";");
                 output.print(member.isMembershipStatus());
                 output.print(";");
                 output.print(member.getMembershipNumber());
+                output.print(";");
+                output.print(member.isMembershipAgeGroup());
                 output.println();
+
 
             }
             output.flush();
@@ -65,7 +68,8 @@ public class FileHandler {
         Member member = new Member();
         member.setFirstName(parts[0]);
         member.setLastName(parts[1]);
-        member.setSwimType(parts[2]);
+        boolean swimType = Boolean.parseBoolean(parts[2]);
+        member.setSwimType(swimType);
         int age = Integer.parseInt(parts[3]);
         member.setAge(age);
         boolean membershipsStatus = Boolean.parseBoolean(parts[4]);
