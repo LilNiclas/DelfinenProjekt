@@ -24,7 +24,6 @@ public class Controller {
         return database.getMembers();
     }
 
-
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
         return database.searchMembersFirstName(searchTerm);
     }
@@ -47,7 +46,6 @@ public class Controller {
         } catch (FileNotFoundException e) {
         }
     }
-
 
     public boolean deleteMember(Member member) {
         return database.deleteMembers(member);

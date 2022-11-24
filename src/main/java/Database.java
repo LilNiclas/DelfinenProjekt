@@ -14,20 +14,20 @@ public class Database {
         this.changesMade = changesMade;
     }
 
-    public Member createMember(String firstName, String lastName, String swimType, int age, boolean membershipStatus, int membershipNumber) {
+    public Member createMember(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber, boolean membershipAgeGroup) {
 
-        Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
+        Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber, membershipAgeGroup);
         database.add(member);
 
         return member;
     }
 
     public void createTestData() {
-        createMember("Bobby", "Wassabi", "Motionist", 22, true, 1);
-        createMember("Michael", "Phelps", "Konkurrencesvømmer", 37, true, 2);
-        createMember("Finn", "Nemo", "Motionistsvømmer", 6, false, 3);
-        createMember("Osama", "Binladen", "Konkurrencesvømmer", 54, true, 4);
-        createMember("Ole","bole","Motionist",23,true,5);
+        createMember("Bobby", "Wassabi", false , 22, true, 1, false);
+        createMember("Michael", "Phelps", true, 37, true, 2, false);
+        createMember("Finn", "Nemo", false , 6, false, 3, true);
+        createMember("Osama", "Binladen", true , 61, true, 4, false);
+        createMember("Ole","bole",false ,23,true,5, true);
     }
 
     public ArrayList<Member> getMembers() {
@@ -67,5 +67,14 @@ public class Database {
         database.addAll(members);
     }
 
+    public void setJuniorOrSenior(){
+        for (Member member : database) {
+            if (member.getAge() < 18) {
+                member.setMembershipAgeGroup(true);
+            } else if (member.getAge() < 18) {
+                member.setMembershipAgeGroup(false);
+            }
+        }
+    }
 
 }

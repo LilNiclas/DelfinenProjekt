@@ -144,7 +144,7 @@ public class Userinterface {
             editMember.setLastName(newLName);
 
 
-        System.out.println("Svømmetype: " + editMember.getSwimType());
+        System.out.println("Svømmetype: " + editMember.isSwimType());
         String newSwimtype = scanner.nextLine();
         if (!newSwimtype.isEmpty())
             editMember.setSwimType(Boolean.parseBoolean(newSwimtype));

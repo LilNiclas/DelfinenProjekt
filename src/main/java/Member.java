@@ -2,10 +2,11 @@ public class Member {
 
     private String firstName;
     private String lastName;
-    private String swimType;
+    private boolean swimType;
     private int age;
     private boolean membershipStatus;
     private int membershipNumber;
+    private boolean membershipAgeGroup;
 
     public Member(){
     }
@@ -17,6 +18,7 @@ public class Member {
         this.age = age;
         this.membershipStatus = membershipStatus;
         this.membershipNumber = membershipNumber;
+        this.membershipAgeGroup = membershipAgeGroup;
     }
 
     public String getFirstName() {
@@ -27,7 +29,7 @@ public class Member {
         return lastName;
     }
 
-    public String getSwimType() {
+    public boolean isSwimType() {
         return swimType;
     }
 
@@ -43,6 +45,10 @@ public class Member {
         return membershipNumber;
     }
 
+    public boolean isMembershipAgeGroup() {
+        return membershipAgeGroup;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -51,7 +57,7 @@ public class Member {
         this.lastName = lastName;
     }
 
-    public void setSwimType(String swimType) {
+    public void setSwimType(boolean swimType) {
         this.swimType = swimType;
     }
 
@@ -67,9 +73,15 @@ public class Member {
         this.membershipNumber = membershipNumber;
     }
 
+    public void setMembershipAgeGroup(boolean membershipAgeGroup) {
+        this.membershipAgeGroup = membershipAgeGroup;
+    }
+
+
     public String toString() {
         return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
-               swimType + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + membershipStatus + " \n " + "Medlemsnummer: " + membershipNumber + " \n ");
+               swimType + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + membershipStatus + " \n " + "Medlemsnummer: "
+                + membershipNumber + " \n " + "Medlems aldersgrupppe: " + membershipAgeGroup + " \n ");
     }
 
 }
