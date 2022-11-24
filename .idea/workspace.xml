@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Lavet create, edit, delete, search, load og save">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AgeEnums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
-    </list>
-    <list id="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" name="Changes by kjartanleander" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
-    </list>
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
-    </list>
-    <list id="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" name="Changes by tobias" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på opdeling af agegroups og kontigent betaling" />
+    <list id="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" name="Changes by kjartanleander" comment="Changes by kjartanleander" />
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla" />
+    <list id="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" name="Changes by tobias" comment="Changes by tobias" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,81 +26,6 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Member.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="5" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="8" end1="8" start2="8" end2="9" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="12" end1="13" start2="13" end2="14" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="19" end1="19" start2="20" end2="21" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="29" end1="30" start2="31" end2="32" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="44" end1="44" start2="46" end2="50" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="53" end1="54" start2="59" end2="60" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="68" end1="68" start2="74" end2="79" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="71" end1="72" start2="82" end2="84" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
-      <ranges>
-        <range start1="32" end1="32" start2="32" end2="34" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="33" end1="33" start2="35" end2="37" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="54" end1="54" start2="58" end2="59" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="67" end1="68" start2="72" end2="73" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="92" end1="93" start2="97" end2="102" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="142" end1="143" start2="151" end2="152" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="145" end1="146" start2="154" end2="155" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="171" end1="175" start2="180" end2="184" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="180" end1="181" start2="189" end2="190" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="186" end1="186" start2="195" end2="196" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="187" end1="187" start2="197" end2="218" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="199" end1="200" start2="230" end2="234" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="201" end1="202" start2="235" end2="236" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="203" end1="204" start2="237" end2="238" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="206" end1="206" start2="240" end2="245" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="209" end1="210" start2="248" end2="248" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="236" end1="237" start2="274" end2="278" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="238" end1="239" start2="279" end2="280" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="240" end1="241" start2="281" end2="282" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="243" end1="243" start2="284" end2="288" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="246" end1="246" start2="291" end2="292" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="261" end1="262" start2="307" end2="311" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="263" end1="264" start2="312" end2="313" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="265" end1="266" start2="314" end2="315" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="268" end1="268" start2="317" end2="321" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="291" end1="292" start2="344" end2="345" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="294" end1="295" start2="347" end2="348" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="298" end1="298" start2="351" end2="364" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="300" end1="301" start2="366" end2="367" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/FileHandler.java">
-      <ranges>
-        <range start1="28" end1="29" start2="28" end2="29" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="35" end1="35" start2="35" end2="37" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="36" end1="36" start2="38" end2="39" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="67" end1="68" start2="70" end2="72" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="74" end1="74" start2="78" end2="80" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Database.java">
-      <ranges>
-        <range start1="5" end1="5" start2="5" end2="6" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="16" end1="17" start2="17" end2="18" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="18" end1="19" start2="19" end2="20" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="25" end1="30" start2="26" end2="31" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="69" end1="69" start2="70" end2="79" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="70" end1="71" start2="80" end2="80" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Controller.java">
-      <ranges>
-        <range start1="14" end1="16" start2="14" end2="16" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
-        <range start1="26" end1="27" start2="26" end2="26" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="49" end1="49" start2="48" end2="52" changelist="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" />
-        <range start1="50" end1="51" start2="53" end2="53" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -153,7 +58,7 @@
       <updated>1669034998069</updated>
       <workItem from="1669034999268" duration="3250000" />
       <workItem from="1669198241983" duration="10498000" />
-      <workItem from="1669285234445" duration="7082000" />
+      <workItem from="1669285234445" duration="7638000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -260,7 +165,42 @@
       <option name="project" value="LOCAL" />
       <updated>1669208636475</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Startet på opdeling af agegroups og kontigent betaling">
+      <created>1669294871562</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294871562</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Changes by kjartanleander">
+      <created>1669294875589</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294875589</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changes by nicla">
+      <created>1669294879232</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294879232</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes by tobias">
+      <created>1669294882642</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294882642</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Startet på opdeling af agegroups og kontigent betaling">
+      <created>1669294885880</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294885880</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,11 +222,12 @@
     <MESSAGE value="Startet på UI" />
     <MESSAGE value="Lavet metoder til createMember, lavet testdata osv." />
     <MESSAGE value="printer liste over medlemmere" />
+    <MESSAGE value="Lavet create, edit, delete, search, load og save" />
     <MESSAGE value="Changes by kjartanleander" />
     <MESSAGE value="Changes by nicla" />
     <MESSAGE value="Changes by tobias" />
-    <MESSAGE value="Lavet create, edit, delete, search, load og save" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lavet create, edit, delete, search, load og save" />
+    <MESSAGE value="Startet på opdeling af agegroups og kontigent betaling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Startet på opdeling af agegroups og kontigent betaling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
