@@ -47,6 +47,10 @@ public class Controller {
         }
     }
 
+    public void setJuniorOrSenior () {
+        database.setJuniorOrSenior();
+    }
+
     public boolean deleteMember(Member member) {
         return database.deleteMembers(member);
     }

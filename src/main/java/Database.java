@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Database {
 
     private ArrayList<Member> database = new ArrayList<>();
+    private Subscription subscription = new Subscription();
 
     private boolean changesMade = true;
 

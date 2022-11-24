@@ -30,7 +30,11 @@ public class Userinterface {
                         saveMembers();
                     } else if (menuChoice == 7) {
                         loadMembers();
+                    } else if (menuChoice == 8) {
+                        showSubscribtions();
                     } else if (menuChoice == 9) {
+                        //...
+                    } else if (menuChoice == 10) {
                         endProgram();
                     }
                     menuError = false;
@@ -52,6 +56,7 @@ public class Userinterface {
                 Tast 5) for at slette en medlemmer.
                 Tast 6) for at gemme medlemmer i systemet.
                 Tast 7) for at load medlemmer.
+                Tast 8) for at information om kontingent.      
                 Tast 9) for at afslutte.
                 """);
     }
@@ -173,10 +178,10 @@ public class Userinterface {
                 System.out.println("Fejl. Tast \"a\" eller \"p\". ");
                 newMembershipStatus = scanner.nextLine();
 
-        System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
-        String newMembershipNumber = scanner.nextLine();
-        if (!newMembershipNumber.isEmpty())
-            editMember.setMembershipNumber(Integer.parseInt(newMembershipNumber));
+                System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
+                String newMembershipNumber = scanner.nextLine();
+                if (!newMembershipNumber.isEmpty())
+                    editMember.setMembershipNumber(Integer.parseInt(newMembershipNumber));
 
 
             }
@@ -223,17 +228,24 @@ public class Userinterface {
             for (Member member : controller.getMembers()) {
                 System.out.println("Navn: " + member.getFirstName());
                 System.out.println("Efternavn: " + member.getLastName());
-                System.out.println("Svømmetype: " + member.getSwimType());
-                if (member.isMembershipStatus() == true)
-                    System.out.println("Er medlem aktiv: Ja");
+                if (member.isSwimType() == true)
+                    System.out.println("Svømmetype: Konkurrencesvømmer");
                 else
-                    System.out.println("Er medlem aktiv: Nej");
+                    System.out.println("Svømmetype: Motionistsvømmer");
+                if (member.isMembershipStatus() == true)
+                    System.out.println("Medlemsstatus: Aktivt");
+                else
+                    System.out.println("Medlemsstatus: Passivt");
                 System.out.println("Alder: " + member.getAge());
                 System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+
+                controller.setJuniorOrSenior();
+                    System.out.println("Aldersgruppe: Junior");
+                    System.out.println("Aldersgruppe: Senior");
+                }
                 System.out.println("");
             }
         }
-    }
 
     public void searchMembers() {
         System.out.println("\u001B[1mSøg efter medlemmer\u001B[0m");
@@ -260,16 +272,24 @@ public class Userinterface {
                 for (Member member : searchResult) {
                     System.out.println("Navn: " + member.getFirstName());
                     System.out.println("Efternavn: " + member.getLastName());
-                    System.out.println("Svømmetype: " + member.getSwimType());
-                    if (member.isMembershipStatus() == true)
-                        System.out.println("Er medlem aktiv: Ja");
+                    if (member.isSwimType() == true)
+                        System.out.println("Svømmetype: Konkurrencesvømmer");
                     else
-                        System.out.println("Er medlem aktiv: Nej");
+                        System.out.println("Svømmetype: Motionistsvømmer");
+                    if (member.isMembershipStatus() == true)
+                        System.out.println("Medlemsstatus: Aktivt");
+                    else
+                        System.out.println("Medlemsstatus: Passivt");
                     System.out.println("Alder: " + member.getAge());
                     System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+                    if (member.isMembershipAgeGroup() == true)
+                        System.out.println("Aldersgruppe: Junior");
+                    else
+                        System.out.println("Aldersgruppe: Senior");
                     System.out.println("");
                 }
             }
+
         } else if (menu == 2) {
             System.out.print("Indtast medlemsnummer: ");
             int searchNumber = scanner.nextInt();
@@ -285,13 +305,20 @@ public class Userinterface {
                 for (Member member : searchResult) {
                     System.out.println("Navn: " + member.getFirstName());
                     System.out.println("Efternavn: " + member.getLastName());
-                    System.out.println("Svømmetype: " + member.getSwimType());
-                    if (member.isMembershipStatus() == true)
-                        System.out.println("Er medlem aktiv: Ja");
+                    if (member.isSwimType() == true)
+                        System.out.println("Svømmetype: Konkurrencesvømmer");
                     else
-                        System.out.println("Er medlem aktiv: Nej");
+                        System.out.println("Svømmetype: Motionistsvømmer");
+                    if (member.isMembershipStatus() == true)
+                        System.out.println("Medlemsstatus: Aktivt");
+                    else
+                        System.out.println("Medlemsstatus: Passivt");
                     System.out.println("Alder: " + member.getAge());
                     System.out.println("Medlemsnummer: " + member.getMembershipNumber());
+                    if (member.isMembershipAgeGroup() == true)
+                        System.out.println("Aldersgruppe: Junior");
+                    else
+                        System.out.println("Aldersgruppe: Senior");
                     System.out.println("");
                 }
             }
@@ -318,13 +345,26 @@ public class Userinterface {
         System.out.println("Indtastede information er gemt" + "\n");
     }
 
-    public void loadMembers () {
+    public void loadMembers() {
         controller.loadMembers();
         System.out.println("Data loaded");
     }
 
+    public void showSubscribtions() {
+        System.out.println("""
+                Tast 1) for at se liste over kontingentbetalinger.
+                Tast 2) for at se det årlige indkomst.
+                """);
+        int menu = scanner.nextInt();
+        if (menu == 1) {
+
+        } else if (menu == 2) {
+
+        }
+    }
+
     public void endProgram() {
-        System.out.println("lukker programmet... farvel!");
+        System.out.println("Lukker programmet... ");
         System.exit(9);
     }
 }

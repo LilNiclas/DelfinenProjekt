@@ -11,7 +11,7 @@ public class Member {
     public Member(){
     }
 
-    public Member(String firstName, String lastName, String swimType, int age, boolean membershipStatus, int membershipNumber) {
+    public Member(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber, boolean membershipAgeGroup) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.swimType = swimType;

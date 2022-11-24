@@ -76,6 +76,8 @@ public class FileHandler {
         member.setMembershipStatus(membershipsStatus);
         int membershipNumber = Integer.parseInt(parts[5]);
         member.setMembershipNumber(membershipNumber);
+        boolean membershipAgeGroup = Boolean.parseBoolean(parts[6]);
+        member.setMembershipAgeGroup(membershipAgeGroup);
 
         return member;
     }
