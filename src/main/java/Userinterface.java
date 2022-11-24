@@ -90,7 +90,11 @@ public class Userinterface {
         System.out.println("Indtast medlemsnummer");
         int memberShipNumber = Integer.parseInt(scanner.nextLine());
 
-        controller.createMember(firstName, lastName, swimType, age, membershipStatus, memberShipNumber);
+
+        //Membershipagrgroup
+        boolean membershipAgeGroup = controller.setJuniorOrSenior();
+
+        controller.createMember(firstName, lastName, swimType, age, membershipStatus, memberShipNumber, membershipAgeGroup);
 
 
     }
@@ -178,13 +182,35 @@ public class Userinterface {
             }
 
             boolean membershipStatus;
-            if (newMembershipStatus.equals("j")) {
+            if (newMembershipStatus.equals("a")) {
                 membershipStatus = true;
             } else {
                 membershipStatus = false;
             }
             editMember.setMembershipStatus(membershipStatus);
+
         }
+
+        System.out.println("Juniormedlem eller Seniormedlem: " + editMember.isMembershipAgeGroup());
+        String newMembershipAgeGroup = scanner.nextLine();
+
+        if (!newMembershipAgeGroup.isEmpty()) {
+            while (!newMembershipAgeGroup.equals("j") && !newMembershipAgeGroup.equals("s")) {
+                System.out.println("Fejl, indtast \"j\" for junior, \"s\" for senior. ");
+                newMembershipAgeGroup = scanner.nextLine();
+
+                boolean membershipAgeGroup;
+                if (newMembershipAgeGroup.equals("j")) {
+                    membershipAgeGroup = true;
+                } else {
+                    membershipAgeGroup = false;
+                }
+                editMember.setMembershipAgeGroup(membershipAgeGroup);
+
+
+            }
+        }
+
     }
 
     public void seeMembers() {
