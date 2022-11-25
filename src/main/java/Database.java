@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Database {
 
     private ArrayList<Member> database = new ArrayList<>();
-    private Subscription subscription = new Subscription();
 
     private boolean changesMade = true;
 
@@ -15,9 +14,9 @@ public class Database {
         this.changesMade = changesMade;
     }
 
-    public Member createMember(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber, boolean membershipAgeGroup) {
+    public Member createMember(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber) {
 
-        Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber, membershipAgeGroup);
+        Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
         database.add(member);
 
         return member;

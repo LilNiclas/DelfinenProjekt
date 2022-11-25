@@ -69,8 +69,22 @@ public class Userinterface {
         System.out.println("Indtast efternavn");
         String lastName = scanner.nextLine();
 
-        System.out.println("Indtast svømmetype(Motionist eller konkurrencesvømmer)");
-        boolean swimType = Boolean.parseBoolean(scanner.nextLine());
+        System.out.println("Indtast svømmetype (m=Motionistsvømmer eller k=konkurrencesvømmer)");
+        boolean swimType = true;
+        char swimTypeAnswer;
+        do {
+            swimTypeAnswer = scanner.nextLine().charAt(0);
+            if (swimTypeAnswer == 'k') {
+                swimType = true;
+                break;
+            } else if (swimTypeAnswer == 'm') {
+                swimType = false;
+                break;
+            } else
+                System.out.println("Tastefejl, tast Motionist eller konkurrencesvømmer");
+
+        } while (swimTypeAnswer != 'm' || swimTypeAnswer != 'k');
+
 
         System.out.println("Indtast alder");
         int age = Integer.parseInt(scanner.nextLine());

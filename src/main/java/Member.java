@@ -21,6 +21,15 @@ public class Member {
         this.membershipAgeGroup = membershipAgeGroup;
     }
 
+    public Member(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.swimType = swimType;
+        this.age = age;
+        this.membershipStatus = membershipStatus;
+        this.membershipNumber = membershipNumber;
+    }
+
     public String getFirstName() {
         return firstName;
     }
