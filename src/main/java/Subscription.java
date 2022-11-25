@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Subscription {
 
     private double payment;
-    private double totalPayment;
 
 
     private Member member = new Member();

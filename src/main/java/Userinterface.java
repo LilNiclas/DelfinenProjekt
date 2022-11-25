@@ -7,7 +7,7 @@ public class Userinterface {
     Controller controller = new Controller();
 
     public void start() {
-        controller.createTestData();
+        //controller.createTestData();
         System.out.println("Velkommen til Delfin svømmeklub");
         boolean menuError;
 
@@ -93,14 +93,11 @@ public class Userinterface {
 
 
         System.out.println("Indtast medlemsnummer");
-        int memberShipNumber = Integer.parseInt(scanner.nextLine());
+        int membershipNumber = Integer.parseInt(scanner.nextLine());
 
 
-        //Membershipagrgroup
-        boolean membershipAgeGroup = controller.setJuniorOrSenior();
-
-        controller.createMember(firstName, lastName, swimType, age, membershipStatus, memberShipNumber, membershipAgeGroup);
-
+        controller.createMember(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
+        controller.setJuniorOrSenior();
 
     }
 
@@ -240,12 +237,16 @@ public class Userinterface {
                 System.out.println("Medlemsnummer: " + member.getMembershipNumber());
 
                 controller.setJuniorOrSenior();
+                if (member.isMembershipAgeGroup() == true) {
                     System.out.println("Aldersgruppe: Junior");
+                } else {
                     System.out.println("Aldersgruppe: Senior");
                 }
-                System.out.println("");
+                System.out.println(" ");
             }
+
         }
+    }
 
     public void searchMembers() {
         System.out.println("\u001B[1mSøg efter medlemmer\u001B[0m");

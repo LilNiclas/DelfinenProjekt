@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på opdeling af agegroups og kontigent betaling" />
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på opdeling af agegroups og kontigent betaling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
     <list id="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" name="Changes by kjartanleander" comment="Changes by kjartanleander" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla" />
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
     <list id="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" name="Changes by tobias" comment="Changes by tobias" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +37,29 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/Database.java">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="5" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="17" end1="18" start2="16" end2="17" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="19" end1="20" start2="18" end2="19" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="26" end1="31" start2="25" end2="30" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
+      <ranges>
+        <range start1="9" end1="10" start2="9" end2="10" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="72" end1="73" start2="72" end2="87" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="95" end1="97" start2="109" end2="110" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="98" end1="100" start2="111" end2="111" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="101" end1="103" start2="112" end2="114" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="242" end1="242" start2="253" end2="254" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="243" end1="243" start2="255" end2="256" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="245" end1="246" start2="258" end2="259" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="247" end1="248" start2="260" end2="263" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -39,15 +72,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "CodeWithMe"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +92,7 @@
       <workItem from="1669034999268" duration="3250000" />
       <workItem from="1669198241983" duration="10498000" />
       <workItem from="1669285234445" duration="7638000" />
+      <workItem from="1669379185997" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -228,6 +262,16 @@
     <MESSAGE value="Changes by tobias" />
     <MESSAGE value="Startet på opdeling af agegroups og kontigent betaling" />
     <option name="LAST_COMMIT_MESSAGE" value="Startet på opdeling af agegroups og kontigent betaling" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
