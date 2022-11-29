@@ -24,10 +24,10 @@ public class Database {
 
     public void createTestData() {
         createMember("Bobby", "Wassabi", false , 22, true, 1);
-        createMember("Michael", "Phelps", true, 37, true, 2);
-        createMember("Finn", "Nemo", false , 6, false, 3);
-        createMember("Osama", "Binladen", true , 61, true, 4);
-        createMember("Ole","bole",false ,23,true,5);
+        createMember("Michael", "Phelps", true, 37, false, 2);
+        createMember("Finn", "Nemo", false , 6, true, 3);
+        createMember("Lonny", "Dahmer", true , 61, true, 4);
+        createMember("Ole","Spole",false ,23,false,5);
     }
 
     public ArrayList<Member> getMembers() {

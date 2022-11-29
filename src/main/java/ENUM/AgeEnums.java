@@ -1,3 +1,4 @@
+package ENUM;
 
 public enum AgeEnums {
     UNDER_18,

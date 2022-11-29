@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.stream.DoubleStream;
 
 public class Userinterface {
     Scanner scanner = new Scanner(System.in);
     Controller controller = new Controller();
 
     public void start() {
-        //controller.createTestData();
+        controller.createTestData();
         System.out.println("Velkommen til Delfin svømmeklub");
         boolean menuError;
 
@@ -206,27 +207,6 @@ public class Userinterface {
             editMember.setMembershipStatus(membershipStatus);
 
         }
-
-        System.out.println("Juniormedlem eller Seniormedlem: " + editMember.isMembershipAgeGroup());
-        String newMembershipAgeGroup = scanner.nextLine();
-
-        if (!newMembershipAgeGroup.isEmpty()) {
-            while (!newMembershipAgeGroup.equals("j") && !newMembershipAgeGroup.equals("s")) {
-                System.out.println("Fejl, indtast \"j\" for junior, \"s\" for senior. ");
-                newMembershipAgeGroup = scanner.nextLine();
-
-                boolean membershipAgeGroup;
-                if (newMembershipAgeGroup.equals("j")) {
-                    membershipAgeGroup = true;
-                } else {
-                    membershipAgeGroup = false;
-                }
-                editMember.setMembershipAgeGroup(membershipAgeGroup);
-
-
-            }
-        }
-
     }
 
     public void seeMembers() {
@@ -372,9 +352,17 @@ public class Userinterface {
                 """);
         int menu = scanner.nextInt();
         if (menu == 1) {
-
+            System.out.println("Kontingent for hvert medlem: ");
+            for (Member member : controller.getMembers()) {
+                System.out.println(member.getFirstName()+": "+ member.getPayment());
+            }
+            System.out.println("\n");
         } else if (menu == 2) {
-
+            double sum =0;
+            for (Member member : controller.getMembers()) {
+                DoubleStream.of(member.getPayment()).sum();
+            }
+            System.out.println("Summen af kontingent: " + sum);
         }
     }
 

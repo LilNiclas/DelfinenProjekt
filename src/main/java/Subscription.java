@@ -1,33 +1,28 @@
 import java.util.ArrayList;
 
 public class Subscription {
-
+    private Member member;
     private double payment;
 
 
-    private Member member = new Member();
-    private Database database = new Database();
+    public Subscription(Member member) {
+        this.member = member;
+    }
 
-    private ArrayList<Member> subscriptionDatabase = new ArrayList<>();
 
-    public void getSubscriptionPerMember() {
+    public double getSubscriptionPerMember() {
 
-        for (Member member : database.getMembers()) {
-            if (member.isMembershipStatus() == true) {
-                if (member.getAge() < 18) {
+            if (member.isActive() == true) {
+                if (member.memberAgeGroup() == AgeEnums.UNDER_18) {
                     payment = 1000;
-                } else if (member.getAge() <= 60) {
+                } else if (member.memberAgeGroup() == AgeEnums.OVER_18) {
                     payment = 1600;
-                } else if (member.getAge() > 60) {
+                } else if (member.memberAgeGroup() == AgeEnums.OVER_60) {
                     payment = 1200;
                 }
             } else {
                 payment = 500;
             }
-        }
-
-
+        return payment;
     }
-
-
 }

@@ -6,7 +6,7 @@ public class Member {
     private int age;
     private boolean membershipStatus;
     private int membershipNumber;
-    private boolean membershipAgeGroup;
+    private boolean isJunior;
 
     public Member(){
     }
@@ -28,6 +28,7 @@ public class Member {
         this.age = age;
         this.membershipStatus = membershipStatus;
         this.membershipNumber = membershipNumber;
+        this.subscription = new Subscription(this);
     }
 
     public String getFirstName() {
@@ -91,6 +92,14 @@ public class Member {
         return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
                swimType + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + membershipStatus + " \n " + "Medlemsnummer: "
                 + membershipNumber + " \n " + "Medlems aldersgrupppe: " + membershipAgeGroup + " \n ");
+    }
+
+    public Subscription getSubscription () {
+        return subscription;
+    }
+
+    public double getPayment () {
+        return getSubscription().getSubscriptionPerMember();
     }
 
 }

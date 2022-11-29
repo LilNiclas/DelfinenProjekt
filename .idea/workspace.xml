@@ -4,16 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på opdeling af agegroups og kontigent betaling">
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Added senior &amp; seniora">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgeEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ENUM/AgeEnums.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subscription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
-    <list id="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" name="Changes by kjartanleander" comment="Changes by kjartanleander" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Changes by nicla">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+    <list id="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" name="Changes by kjartanleander" comment="Changes by kjartanleander">
       <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Added final friday">
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgeEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ENUM/AgeEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    </list>
+    <list id="1a197357-86b1-4955-96cc-436784a53403" name="Changes by Simon Bang Dessau" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
     </list>
@@ -38,25 +51,95 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/ENUM/AgeEnums.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="5" end1="5" start2="6" end2="8" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+      </ranges>
+    </file>
     <file path="$PROJECT_DIR$/src/main/java/Database.java">
       <ranges>
-        <range start1="5" end1="6" start2="5" end2="5" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="17" end1="18" start2="16" end2="17" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="19" end1="20" start2="18" end2="19" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="26" end1="31" start2="25" end2="30" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="16" end1="17" start2="16" end2="17" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="18" end1="19" start2="18" end2="19" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="26" end1="30" start2="26" end2="30" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="72" end1="73" start2="72" end2="73" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="74" end1="75" start2="74" end2="75" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Subscription.java">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="3" end1="4" start2="4" end2="5" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="7" end1="9" start2="8" end2="11" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="10" end1="11" start2="12" end2="12" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="12" end1="13" start2="13" end2="14" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="14" end1="17" start2="15" end2="17" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="18" end1="19" start2="18" end2="19" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="20" end1="21" start2="20" end2="21" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="26" end1="32" start2="26" end2="28" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/Member.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="1" end1="1" start2="3" end2="5" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="4" end1="5" start2="8" end2="9" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="6" end1="7" start2="10" end2="11" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="8" end1="9" start2="12" end2="13" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="13" end1="14" start2="17" end2="18" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="16" end1="17" start2="20" end2="21" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="18" end1="19" start2="22" end2="23" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="20" end1="22" start2="24" end2="27" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="23" end1="24" start2="28" end2="29" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="26" end1="27" start2="31" end2="32" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="28" end1="29" start2="33" end2="34" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="30" end1="30" start2="35" end2="36" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="40" end1="42" start2="46" end2="48" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="48" end1="50" start2="54" end2="56" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="56" end1="58" start2="62" end2="64" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="68" end1="70" start2="74" end2="76" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="76" end1="78" start2="82" end2="84" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="81" end1="82" start2="87" end2="88" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="84" end1="86" start2="90" end2="92" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="88" end1="88" start2="94" end2="104" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="91" end1="93" start2="107" end2="109" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="94" end1="94" start2="110" end2="118" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
       <ranges>
-        <range start1="9" end1="10" start2="9" end2="10" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="72" end1="73" start2="72" end2="87" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="95" end1="97" start2="109" end2="110" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="98" end1="100" start2="111" end2="111" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="101" end1="103" start2="112" end2="114" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="242" end1="242" start2="253" end2="254" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="243" end1="243" start2="255" end2="256" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="245" end1="246" start2="258" end2="259" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="247" end1="248" start2="260" end2="263" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="0" end1="0" start2="0" end2="2" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="9" end1="10" start2="11" end2="12" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="35" end1="36" start2="37" end2="38" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="58" end1="60" start2="60" end2="63" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="72" end1="73" start2="75" end2="76" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="77" end1="78" start2="80" end2="81" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="80" end1="81" start2="83" end2="84" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="92" end1="93" start2="95" end2="96" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="97" end1="98" start2="100" end2="101" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="100" end1="101" start2="103" end2="104" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="112" end1="113" start2="115" end2="116" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="162" end1="163" start2="165" end2="166" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="165" end1="166" start2="168" end2="169" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="183" end1="185" start2="186" end2="188" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="186" end1="188" start2="189" end2="191" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="189" end1="190" start2="192" end2="193" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="199" end1="202" start2="202" end2="205" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="203" end1="204" start2="206" end2="207" changelist="72e6388b-1a62-4b3d-bcd8-a780d9fbcf96" />
+        <range start1="205" end1="206" start2="208" end2="211" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="208" end1="229" start2="213" end2="213" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="241" end1="242" start2="225" end2="226" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="245" end1="246" start2="229" end2="230" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="253" end1="254" start2="237" end2="238" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="289" end1="290" start2="273" end2="274" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="293" end1="294" start2="277" end2="278" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="299" end1="300" start2="283" end2="284" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="322" end1="323" start2="306" end2="307" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="326" end1="327" start2="310" end2="311" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="332" end1="333" start2="316" end2="317" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="374" end1="375" start2="358" end2="363" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="376" end1="377" start2="364" end2="367" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="378" end1="378" start2="368" end2="369" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
       </ranges>
     </file>
   </component>
@@ -92,7 +175,7 @@
       <workItem from="1669034999268" duration="3250000" />
       <workItem from="1669198241983" duration="10498000" />
       <workItem from="1669285234445" duration="7638000" />
-      <workItem from="1669379185997" duration="2472000" />
+      <workItem from="1669379185997" duration="16311000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
@@ -234,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669294885880</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added senior &amp; seniora">
+      <created>1669383619459</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669383619460</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added final friday">
+      <created>1669383643846</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669383643846</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +358,9 @@
     <MESSAGE value="Changes by nicla" />
     <MESSAGE value="Changes by tobias" />
     <MESSAGE value="Startet på opdeling af agegroups og kontigent betaling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startet på opdeling af agegroups og kontigent betaling" />
+    <MESSAGE value="Added senior &amp; seniora" />
+    <MESSAGE value="Added final friday" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added final friday" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
