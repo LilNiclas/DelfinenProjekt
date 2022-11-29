@@ -14,9 +14,9 @@ public class Database {
         this.changesMade = changesMade;
     }
 
-    public Member createMember(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber) {
+    public Member createMember(String firstName, String lastName, boolean competitive, int age, boolean active, int membershipNumber) {
 
-        Member member = new Member(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
+        Member member = new Member(firstName, lastName, competitive, age, active, membershipNumber);
         database.add(member);
 
         return member;

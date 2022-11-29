@@ -2,7 +2,7 @@ public class Member {
 
     private String firstName;
     private String lastName;
-    private boolean swimType;
+    private boolean isCompetitive;
     private int age;
     private boolean membershipStatus;
     private int membershipNumber;
@@ -11,10 +11,10 @@ public class Member {
     public Member(){
     }
 
-    public Member(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber, boolean membershipAgeGroup) {
+    /* public Member(String firstName, String lastName, boolean competitive, int age, boolean active, int membershipNumber, boolean junior) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.swimType = swimType;
+        this.competitive = competitive;
         this.age = age;
         this.membershipStatus = membershipStatus;
         this.membershipNumber = membershipNumber;
@@ -24,7 +24,7 @@ public class Member {
     public Member(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.swimType = swimType;
+        this.isCompetitive = isCompetitive;
         this.age = age;
         this.membershipStatus = membershipStatus;
         this.membershipNumber = membershipNumber;
@@ -39,8 +39,8 @@ public class Member {
         return lastName;
     }
 
-    public boolean isSwimType() {
-        return swimType;
+    public boolean isCompetitive() {
+        return isCompetitive;
     }
 
     public int getAge() {
@@ -67,8 +67,8 @@ public class Member {
         this.lastName = lastName;
     }
 
-    public void setSwimType(boolean swimType) {
-        this.swimType = swimType;
+    public void setCompetitive(boolean competitive) {
+        this.isCompetitive = competitive;
     }
 
     public void setAge(int age) {

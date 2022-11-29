@@ -71,15 +71,15 @@ public class Userinterface {
         String lastName = scanner.nextLine();
 
         System.out.println("Indtast svømmetype (m=Motionistsvømmer eller k=konkurrencesvømmer)");
-        boolean swimType = true;
+        boolean competitive = true;
         char swimTypeAnswer;
         do {
             swimTypeAnswer = scanner.nextLine().charAt(0);
             if (swimTypeAnswer == 'k') {
-                swimType = true;
+                competitive = true;
                 break;
             } else if (swimTypeAnswer == 'm') {
-                swimType = false;
+                competitive = false;
                 break;
             } else
                 System.out.println("Tastefejl, tast Motionist eller konkurrencesvømmer");
@@ -91,15 +91,15 @@ public class Userinterface {
         int age = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Indtast brugers aktivitet i klubben(a=Aktivt eller p=passivt)");
-        boolean membershipStatus = true;
+        boolean active = true;
         char activityAnswer;
         do {
             activityAnswer = scanner.nextLine().charAt(0);
             if (activityAnswer == 'a') {
-                membershipStatus = true;
+                active = true;
                 break;
             } else if (activityAnswer == 'p') {
-                membershipStatus = false;
+                active = false;
                 break;
             } else
                 System.out.println("Tastefejl, tast aktiv eller passiv");
@@ -111,7 +111,7 @@ public class Userinterface {
         int membershipNumber = Integer.parseInt(scanner.nextLine());
 
 
-        controller.createMember(firstName, lastName, swimType, age, membershipStatus, membershipNumber);
+        controller.createMember(firstName, lastName, competitive, age, active, membershipNumber);
         controller.setJuniorOrSenior();
 
     }
@@ -202,7 +202,7 @@ public class Userinterface {
             if (newMembershipStatus.equals("a")) {
                 membershipStatus = true;
             } else {
-                membershipStatus = false;
+                active = false;
             }
             editMember.setMembershipStatus(membershipStatus);
 
