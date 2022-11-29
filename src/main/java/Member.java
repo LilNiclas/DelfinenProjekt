@@ -1,4 +1,8 @@
+import ENUM.AgeEnums;
+
 public class Member {
+
+    private Subscription subscription;
 
     private String firstName;
     private String lastName;
@@ -87,6 +91,16 @@ public class Member {
         this.membershipAgeGroup = membershipAgeGroup;
     }
 
+    public AgeEnums memberAgeGroup() {
+
+        if (age < 18) {
+            return AgeEnums.UNDER_18;
+        } else if (age < 60) {
+            return AgeEnums.OVER_18;
+        } else {
+            return AgeEnums.OVER_60;
+        }
+    }
 
     public String toString() {
         return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +

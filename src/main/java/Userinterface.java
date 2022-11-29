@@ -1,3 +1,5 @@
+import ENUM.AgeEnums;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -34,7 +36,7 @@ public class Userinterface {
                     } else if (menuChoice == 8) {
                         showSubscribtions();
                     } else if (menuChoice == 9) {
-                        //...
+
                     } else if (menuChoice == 10) {
                         endProgram();
                     }
@@ -57,8 +59,9 @@ public class Userinterface {
                 Tast 5) for at slette en medlemmer.
                 Tast 6) for at gemme medlemmer i systemet.
                 Tast 7) for at load medlemmer.
-                Tast 8) for at information om kontingent.      
-                Tast 9) for at afslutte.
+                Tast 8) for at information om kontingent.  
+                Tast 9)   
+                Tast 10) for at afslutte.
                 """);
     }
 
@@ -364,6 +367,7 @@ public class Userinterface {
             }
             System.out.println("Summen af kontingent: " + sum);
         }
+
     }
 
     public void endProgram() {

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import ENUM.AgeEnums;
 
 public class Subscription {
     private Member member;

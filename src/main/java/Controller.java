@@ -1,8 +1,11 @@
+import ENUM.AgeEnums;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Controller {
     private Database database;
+    private Subscription subscription;
     private FileHandler fileHandler;
 
 
@@ -47,7 +50,7 @@ public class Controller {
         }
     }
 
-    public void setJuniorOrSenior () {
+    public void setJuniorOrSenior() {
         database.setJuniorOrSenior();
     }
 
@@ -56,3 +59,4 @@ public class Controller {
     }
 
 }
+
