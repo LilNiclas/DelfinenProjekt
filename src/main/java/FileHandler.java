@@ -26,15 +26,15 @@ public class FileHandler {
                 output.print(";");
                 output.print(member.getLastName());
                 output.print(";");
-                output.print(member.isSwimType());
+                output.print(member.isCompetitive());
                 output.print(";");
                 output.print(member.getAge());
                 output.print(";");
-                output.print(member.isMembershipStatus());
+                output.print(member.isActive());
                 output.print(";");
                 output.print(member.getMembershipNumber());
                 output.print(";");
-                output.print(member.isMembershipAgeGroup());
+                output.print(member.isJunior());
                 output.println();
 
 
@@ -69,15 +69,15 @@ public class FileHandler {
         member.setFirstName(parts[0]);
         member.setLastName(parts[1]);
         boolean swimType = Boolean.parseBoolean(parts[2]);
-        member.setSwimType(swimType);
+        member.setCompetitive(swimType);
         int age = Integer.parseInt(parts[3]);
         member.setAge(age);
         boolean membershipsStatus = Boolean.parseBoolean(parts[4]);
-        member.setMembershipStatus(membershipsStatus);
+        member.setActive(membershipsStatus);
         int membershipNumber = Integer.parseInt(parts[5]);
         member.setMembershipNumber(membershipNumber);
         boolean membershipAgeGroup = Boolean.parseBoolean(parts[6]);
-        member.setMembershipAgeGroup(membershipAgeGroup);
+        member.setJunior(membershipAgeGroup);
 
         return member;
     }

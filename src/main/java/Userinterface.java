@@ -164,10 +164,10 @@ public class Userinterface {
             editMember.setLastName(newLName);
 
 
-        System.out.println("Svømmetype: " + editMember.isSwimType());
+        System.out.println("Svømmetype: " + editMember.isCompetitive());
         String newSwimtype = scanner.nextLine();
         if (!newSwimtype.isEmpty())
-            editMember.setSwimType(Boolean.parseBoolean(newSwimtype));
+            editMember.setCompetitive(Boolean.parseBoolean(newSwimtype));
 
 
         System.out.println("Alder: " + editMember.getAge());
@@ -185,13 +185,13 @@ public class Userinterface {
             }
         } while (writingError == true);
 
-        System.out.println("Medlemsstatus: " + editMember.isMembershipStatus());
-        String newMembershipStatus = scanner.nextLine();
+        System.out.println("Medlemsstatus: " + editMember.isActive());
+        String newActive = scanner.nextLine();
 
-        if (!newMembershipStatus.isEmpty()) {
-            while (!newMembershipStatus.equals("p") && !newMembershipStatus.equals("a")) {
+        if (!newActive.isEmpty()) {
+            while (!newActive.equals("p") && !newActive.equals("a")) {
                 System.out.println("Fejl. Tast \"a\" eller \"p\". ");
-                newMembershipStatus = scanner.nextLine();
+                newActive = scanner.nextLine();
 
                 System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
                 String newMembershipNumber = scanner.nextLine();
@@ -201,13 +201,15 @@ public class Userinterface {
 
             }
 
-            boolean membershipStatus;
-            if (newMembershipStatus.equals("a")) {
-                membershipStatus = true;
+            boolean active;
+            if (newActive.equals("a")) {
+                active = true;
             } else {
                 active = false;
             }
-            editMember.setMembershipStatus(membershipStatus);
+            editMember.setActive(active);
+
+            controller.setJuniorOrSenior();
 
         }
     }
@@ -222,11 +224,11 @@ public class Userinterface {
             for (Member member : controller.getMembers()) {
                 System.out.println("Navn: " + member.getFirstName());
                 System.out.println("Efternavn: " + member.getLastName());
-                if (member.isSwimType() == true)
+                if (member.isCompetitive() == true)
                     System.out.println("Svømmetype: Konkurrencesvømmer");
                 else
                     System.out.println("Svømmetype: Motionistsvømmer");
-                if (member.isMembershipStatus() == true)
+                if (member.isActive() == true)
                     System.out.println("Medlemsstatus: Aktivt");
                 else
                     System.out.println("Medlemsstatus: Passivt");
@@ -234,7 +236,7 @@ public class Userinterface {
                 System.out.println("Medlemsnummer: " + member.getMembershipNumber());
 
                 controller.setJuniorOrSenior();
-                if (member.isMembershipAgeGroup() == true) {
+                if (member.isJunior() == true) {
                     System.out.println("Aldersgruppe: Junior");
                 } else {
                     System.out.println("Aldersgruppe: Senior");
@@ -270,17 +272,17 @@ public class Userinterface {
                 for (Member member : searchResult) {
                     System.out.println("Navn: " + member.getFirstName());
                     System.out.println("Efternavn: " + member.getLastName());
-                    if (member.isSwimType() == true)
+                    if (member.isCompetitive() == true)
                         System.out.println("Svømmetype: Konkurrencesvømmer");
                     else
                         System.out.println("Svømmetype: Motionistsvømmer");
-                    if (member.isMembershipStatus() == true)
+                    if (member.isActive() == true)
                         System.out.println("Medlemsstatus: Aktivt");
                     else
                         System.out.println("Medlemsstatus: Passivt");
                     System.out.println("Alder: " + member.getAge());
                     System.out.println("Medlemsnummer: " + member.getMembershipNumber());
-                    if (member.isMembershipAgeGroup() == true)
+                    if (member.isJunior() == true)
                         System.out.println("Aldersgruppe: Junior");
                     else
                         System.out.println("Aldersgruppe: Senior");
@@ -303,17 +305,17 @@ public class Userinterface {
                 for (Member member : searchResult) {
                     System.out.println("Navn: " + member.getFirstName());
                     System.out.println("Efternavn: " + member.getLastName());
-                    if (member.isSwimType() == true)
+                    if (member.isCompetitive() == true)
                         System.out.println("Svømmetype: Konkurrencesvømmer");
                     else
                         System.out.println("Svømmetype: Motionistsvømmer");
-                    if (member.isMembershipStatus() == true)
+                    if (member.isActive() == true)
                         System.out.println("Medlemsstatus: Aktivt");
                     else
                         System.out.println("Medlemsstatus: Passivt");
                     System.out.println("Alder: " + member.getAge());
                     System.out.println("Medlemsnummer: " + member.getMembershipNumber());
-                    if (member.isMembershipAgeGroup() == true)
+                    if (member.isJunior() == true)
                         System.out.println("Aldersgruppe: Junior");
                     else
                         System.out.println("Aldersgruppe: Senior");

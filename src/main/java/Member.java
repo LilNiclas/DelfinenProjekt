@@ -8,7 +8,7 @@ public class Member {
     private String lastName;
     private boolean isCompetitive;
     private int age;
-    private boolean membershipStatus;
+    private boolean isActive;
     private int membershipNumber;
     private boolean isJunior;
 
@@ -20,17 +20,18 @@ public class Member {
         this.lastName = lastName;
         this.competitive = competitive;
         this.age = age;
-        this.membershipStatus = membershipStatus;
+        this.active = active;
         this.membershipNumber = membershipNumber;
-        this.membershipAgeGroup = membershipAgeGroup;
-    }
+        this.junior = junior;
+        this.subscription = new Subscription(this);
+    } */
 
-    public Member(String firstName, String lastName, boolean swimType, int age, boolean membershipStatus, int membershipNumber) {
+    public Member(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.isCompetitive = isCompetitive;
         this.age = age;
-        this.membershipStatus = membershipStatus;
+        this.isActive = isActive;
         this.membershipNumber = membershipNumber;
         this.subscription = new Subscription(this);
     }
@@ -51,16 +52,16 @@ public class Member {
         return age;
     }
 
-    public boolean isMembershipStatus() {
-        return membershipStatus;
+    public boolean isActive() {
+        return isActive;
     }
 
     public int getMembershipNumber() {
         return membershipNumber;
     }
 
-    public boolean isMembershipAgeGroup() {
-        return membershipAgeGroup;
+    public boolean isJunior() {
+        return isJunior;
     }
 
     public void setFirstName(String firstName) {
@@ -79,16 +80,16 @@ public class Member {
         this.age = age;
     }
 
-    public void setMembershipStatus(boolean membershipStatus) {
-        this.membershipStatus = membershipStatus;
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 
     public void setMembershipNumber(int memberShipNumber) {
-        this.membershipNumber = membershipNumber;
+        this.membershipNumber = memberShipNumber;
     }
 
-    public void setMembershipAgeGroup(boolean membershipAgeGroup) {
-        this.membershipAgeGroup = membershipAgeGroup;
+    public void setJunior(boolean junior) {
+        this.isJunior = junior;
     }
 
     public AgeEnums memberAgeGroup() {
@@ -104,8 +105,8 @@ public class Member {
 
     public String toString() {
         return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
-               swimType + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + membershipStatus + " \n " + "Medlemsnummer: "
-                + membershipNumber + " \n " + "Medlems aldersgrupppe: " + membershipAgeGroup + " \n ");
+                isCompetitive + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + isActive + " \n " + "Medlemsnummer: "
+                + membershipNumber + " \n " + "Medlems aldersgrupppe: " + isJunior + " \n ");
     }
 
     public Subscription getSubscription () {

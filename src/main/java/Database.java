@@ -70,9 +70,9 @@ public class Database {
     public void setJuniorOrSenior(){
         for (Member member : database) {
             if (member.getAge() < 18) {
-                member.setMembershipAgeGroup(true);
+                member.setJunior(true);
             } else if (member.getAge() < 18) {
-                member.setMembershipAgeGroup(false);
+                member.setJunior(false);
             }
         }
     }
