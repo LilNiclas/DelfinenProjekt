@@ -359,15 +359,12 @@ public class Userinterface {
         if (menu == 1) {
             System.out.println("Kontingent for hvert medlem: ");
             for (Member member : controller.getMembers()) {
-                System.out.println(member.getFirstName()+": "+ member.getPayment());
+                System.out.println(member.getFirstName()+" "+member.getLastName()+": "+ member.getPayment());
             }
             System.out.println("\n");
+
         } else if (menu == 2) {
-            double sum =0;
-            for (Member member : controller.getMembers()) {
-                DoubleStream.of(member.getPayment()).sum();
-            }
-            System.out.println("Summen af kontingent: " + sum);
+            System.out.println("Samlet kontingent for året: "+controller.getTotalPayment()+" kr."+"\n");
         }
 
     }

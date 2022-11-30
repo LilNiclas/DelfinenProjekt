@@ -1,5 +1,3 @@
-import ENUM.AgeEnums;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -56,6 +54,10 @@ public class Controller {
 
     public boolean deleteMember(Member member) {
         return database.deleteMembers(member);
+    }
+
+    public double getTotalPayment () {
+        return database.getTotalPayment();
     }
 
 }

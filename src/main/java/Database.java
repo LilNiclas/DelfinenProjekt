@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.DoubleStream;
 
 public class Database {
 
@@ -77,4 +78,11 @@ public class Database {
         }
     }
 
+    public double getTotalPayment () {
+        double yearlyPayment=0;
+        for (Member member : database) {
+            yearlyPayment+=member.getPayment();
+        }
+        return yearlyPayment;
+    }
 }
