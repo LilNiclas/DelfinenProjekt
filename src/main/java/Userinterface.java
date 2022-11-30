@@ -11,7 +11,7 @@ public class Userinterface {
 
     public void start() {
         controller.createTestData();
-        System.out.println("Velkommen til Delfin svømmeklub");
+        System.out.println("\u001B[1mVelkommen til Delfin svømmeklub\u001B[0m");
         boolean menuError;
 
         do {
@@ -51,18 +51,17 @@ public class Userinterface {
     }
 
     public void startPage() {
-        System.out.println("""
-                Tast 1) for oprettelse af nye medlemmer.
-                Tast 2) for redigering af eksisterende medlemmer.
-                Tast 3) for udskriving af hele listen.
-                Tast 4) for at søge efter medlemmer.
-                Tast 5) for at slette en medlemmer.
-                Tast 6) for at gemme medlemmer i systemet.
-                Tast 7) for at load medlemmer.
-                Tast 8) for at information om kontingent.  
-                Tast 9)   
-                Tast 10) for at afslutte.
-                """);
+
+        System.out.println("\u001B[1m1.\u001B[0m Opret medlem");
+        System.out.println("\u001B[1m2.\u001B[0m Rediger medlemmer");
+        System.out.println("\u001B[1m3.\u001B[0m Udskrivning af medlemmer");
+        System.out.println("\u001B[1m4.\u001B[0m Søg efter medlem");
+        System.out.println("\u001B[1m5.\u001B[0m Slet medlem");
+        System.out.println("\u001B[1m6.\u001B[0m Gem information");
+        System.out.println("\u001B[1m7.\u001B[0m Load sidste gem");
+        System.out.println("\u001B[1m8.\u001B[0m Kontigentbetaling");
+        System.out.println("\u001B[1m9.\u001B[0m");
+        System.out.println("\u001B[1m10.\u001B[0m Afslut programmet");
     }
 
     public void createMember() {
@@ -249,11 +248,11 @@ public class Userinterface {
 
     public void searchMembers() {
         System.out.println("\u001B[1mSøg efter medlemmer\u001B[0m");
-
-        System.out.println("""
-                Tast 1) for at søge efter medlem ved fornavn.
-                Tast 2) for at søge efter medlem ved medlemsnummer.
-                """);
+        
+        System.out.println("\u001B[1m1.\u001B[0m Søg efter fornavn");
+        System.out.println("\u001B[1m2.\u001B[0m Søg efter medlemsnummer");
+        
+        
         int menu = scanner.nextInt();
 
         if (menu == 1) {
@@ -351,10 +350,9 @@ public class Userinterface {
     }
 
     public void showSubscribtions() {
-        System.out.println("""
-                Tast 1) for at se liste over kontingentbetalinger.
-                Tast 2) for at se det årlige indkomst.
-                """);
+        System.out.println("\u001B[1m1.\u001B[0m Liste over kontigentbetalinger");
+        System.out.println("\u001B[1m2.\u001B[0m Samlet årlig indkomst");
+        
         int menu = scanner.nextInt();
         if (menu == 1) {
             System.out.println("Kontingent for hvert medlem: ");
@@ -366,7 +364,6 @@ public class Userinterface {
         } else if (menu == 2) {
             System.out.println("Samlet kontingent for året: "+controller.getTotalPayment()+" kr."+"\n");
         }
-
     }
 
     public void endProgram() {
