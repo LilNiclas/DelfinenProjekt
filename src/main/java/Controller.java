@@ -60,5 +60,12 @@ public class Controller {
         return database.getTotalPayment();
     }
 
+    public ArrayList<Member> addJuniorTeam() {
+        return database.addJuniorTeam();
+    }
+
+    public Member addSeniorTeam() {
+        return database.addSeniorTeam();
+    }
 }
 

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-import java.util.stream.DoubleStream;
 
 public class Database {
 
     private ArrayList<Member> database = new ArrayList<>();
+    private ArrayList<Member> juniorComp = new ArrayList<>();
 
     private boolean changesMade = true;
 
@@ -24,11 +24,11 @@ public class Database {
     }
 
     public void createTestData() {
-        createMember("Bobby", "Wassabi", false , 22, true, 1);
+        createMember("Bobby", "Wassabi", false, 22, true, 1);
         createMember("Michael", "Phelps", true, 37, false, 2);
-        createMember("Finn", "Nemo", false , 6, true, 3);
-        createMember("Lonny", "Dahmer", true , 61, true, 4);
-        createMember("Ole","Spole",false ,23,false,5);
+        createMember("Finn", "Nemo", false, 6, true, 3);
+        createMember("Lonny", "Dahmer", true, 61, true, 4);
+        createMember("Ole", "Spole", false, 23, false, 5);
     }
 
     public ArrayList<Member> getMembers() {
@@ -39,7 +39,7 @@ public class Database {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member: database) {
+        for (Member member : database) {
             if (member.getFirstName().toLowerCase().contains(searchTerm.toLowerCase().trim())) {
                 searchResult.add(member);
             }
@@ -51,8 +51,8 @@ public class Database {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member: database) {
-            if (member.getMembershipNumber()==searchNumber) {
+        for (Member member : database) {
+            if (member.getMembershipNumber() == searchNumber) {
                 searchResult.add(member);
             }
         }
@@ -68,7 +68,7 @@ public class Database {
         database.addAll(members);
     }
 
-    public void setJuniorOrSenior(){
+    public void setJuniorOrSenior() {
         for (Member member : database) {
             if (member.getAge() < 18) {
                 member.setJunior(true);
@@ -78,10 +78,10 @@ public class Database {
         }
     }
 
-    public double getTotalPayment () {
-        double yearlyPayment=0;
+    public double getTotalPayment() {
+        double yearlyPayment = 0;
         for (Member member : database) {
-            yearlyPayment+=member.getPayment();
+            yearlyPayment += member.getPayment();
         }
         return yearlyPayment;
     }
