@@ -85,4 +85,23 @@ public class Database {
         }
         return yearlyPayment;
     }
+
+    public Member addSeniorTeam() {
+        for (Member member : database) {
+            if (member.isJunior() == false) {
+                return member;
+            }
+        }
+        return null;
+
+    }
+
+    public ArrayList<Member> addJuniorTeam() {
+        for (Member member : database) {
+            if (member.isJunior() == true) {
+                juniorComp.add(member);
+            }
+        }
+        return null;
+    }
 }

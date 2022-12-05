@@ -36,8 +36,10 @@ public class Userinterface {
                     } else if (menuChoice == 8) {
                         showSubscribtions();
                     } else if (menuChoice == 9) {
-
+                        showTeams();
                     } else if (menuChoice == 10) {
+
+                    } else if (menuChoice == 15) {
                         endProgram();
                     }
                     menuError = false;
@@ -60,8 +62,8 @@ public class Userinterface {
         System.out.println("\u001B[1m6.\u001B[0m Gem information");
         System.out.println("\u001B[1m7.\u001B[0m Load sidste gem");
         System.out.println("\u001B[1m8.\u001B[0m Kontigentbetaling");
-        System.out.println("\u001B[1m9.\u001B[0m");
-        System.out.println("\u001B[1m10.\u001B[0m Afslut programmet");
+        System.out.println("\u001B[1m9.\u001B[0m Udskrivning af hold");
+        System.out.println("\u001B[1m15.\u001B[0m Afslut programmet");
     }
 
     public void createMember() {
@@ -248,11 +250,11 @@ public class Userinterface {
 
     public void searchMembers() {
         System.out.println("\u001B[1mSøg efter medlemmer\u001B[0m");
-        
+
         System.out.println("\u001B[1m1.\u001B[0m Søg efter fornavn");
         System.out.println("\u001B[1m2.\u001B[0m Søg efter medlemsnummer");
-        
-        
+
+
         int menu = scanner.nextInt();
 
         if (menu == 1) {
@@ -352,17 +354,41 @@ public class Userinterface {
     public void showSubscribtions() {
         System.out.println("\u001B[1m1.\u001B[0m Liste over kontigentbetalinger");
         System.out.println("\u001B[1m2.\u001B[0m Samlet årlig indkomst");
-        
+
         int menu = scanner.nextInt();
         if (menu == 1) {
             System.out.println("Kontingent for hvert medlem: ");
             for (Member member : controller.getMembers()) {
-                System.out.println(member.getFirstName()+" "+member.getLastName()+": "+ member.getPayment());
+                System.out.println(member.getFirstName() + " " + member.getLastName() + ": " + member.getPayment());
             }
             System.out.println("\n");
 
         } else if (menu == 2) {
-            System.out.println("Samlet kontingent for året: "+controller.getTotalPayment()+" kr."+"\n");
+            System.out.println("Samlet kontingent for året: " + controller.getTotalPayment() + " kr." + "\n");
+        }
+    }
+
+    public void showTeams() {
+        System.out.println("\u001B[1m1.\u001B[0m Se liste af Seinior");
+        System.out.println("\u001B[1m2.\u001B[0m Se liste af junior");
+
+        int menu = scanner.nextInt();
+        if (menu == 1) {
+            System.out.println("");
+            for (Member member : controller.getMembers()) {
+                if (member.isJunior()==false) {
+                    System.out.println("Træner: "+);
+                    System.out.println(member.getFirstName());
+                }
+            }
+
+        } else if (menu == 2) {
+            System.out.println("Konkurrence junior svømmere");
+            for (Member member : controller.getMembers()) {
+
+                System.out.println(member.getFirstName() + " " + member.getLastName() + " \n ");
+
+            }
         }
     }
 
