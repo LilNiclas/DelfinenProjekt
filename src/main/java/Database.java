@@ -28,6 +28,20 @@ public class Database {
         return member;
     }
 
+    public Coach createCoachJunior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
+        Coach trainer = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
+        coachJunior.add(trainer);
+
+        return trainer;
+    }
+
+    public Coach createCoachSenior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
+        Coach coach = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
+        coachSenior.add(coach);
+
+        return coach;
+    }
+
     public void createTestData() {
         createMember("Bobby", "Wassabi", false, 22, true, 1);
         createMember("Michael", "Phelps", true, 37, false, 2);
