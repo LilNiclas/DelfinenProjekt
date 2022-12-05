@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.DoubleStream;
 
 public class Database {
 
@@ -31,6 +32,11 @@ public class Database {
         createMember("Ole", "Spole", false, 23, false, 5);
     }
 
+    public void createCoachData() {
+        createCoachJunior("Simon", "Leander", false, 72, true, 200, true);
+        createCoachSenior("Nidos", "Kräms", false, 23, true, 100, true);
+    }
+
     public ArrayList<Member> getMembers() {
         return database;
     }
@@ -39,7 +45,7 @@ public class Database {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member : database) {
+        for (Member member: database) {
             if (member.getFirstName().toLowerCase().contains(searchTerm.toLowerCase().trim())) {
                 searchResult.add(member);
             }
@@ -51,8 +57,8 @@ public class Database {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member : database) {
-            if (member.getMembershipNumber() == searchNumber) {
+        for (Member member: database) {
+            if (member.getMembershipNumber()==searchNumber) {
                 searchResult.add(member);
             }
         }
@@ -68,7 +74,7 @@ public class Database {
         database.addAll(members);
     }
 
-    public void setJuniorOrSenior() {
+    public void setJuniorOrSenior(){
         for (Member member : database) {
             if (member.getAge() < 18) {
                 member.setJunior(true);
@@ -78,10 +84,10 @@ public class Database {
         }
     }
 
-    public double getTotalPayment() {
-        double yearlyPayment = 0;
+    public double getTotalPayment () {
+        double yearlyPayment=0;
         for (Member member : database) {
-            yearlyPayment += member.getPayment();
+            yearlyPayment+=member.getPayment();
         }
         return yearlyPayment;
     }
@@ -104,4 +110,14 @@ public class Database {
         }
         return null;
     }
-}
+
+/*
+    public void teamJteamS() {
+        for(Member member : database) {
+            if (member.isJunior()==true) {
+                coachJunior.add(member);
+            } else {
+                coa
+            }
+        }
+    }*/
