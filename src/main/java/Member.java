@@ -1,7 +1,7 @@
 import ENUM.AgeEnums;
 
 public class Member {
-
+    private Time time;
     private Subscription subscription;
 
     private String firstName;
