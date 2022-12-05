@@ -21,6 +21,10 @@ public class Controller {
         database.createTestData();
     }
 
+    public void createTestDataCoach () {
+        database.createCoachData();
+    }
+
     public ArrayList<Member> getMembers() {
         return database.getMembers();
     }

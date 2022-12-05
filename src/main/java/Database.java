@@ -6,6 +6,10 @@ public class Database {
     private ArrayList<Member> database = new ArrayList<>();
     private ArrayList<Member> juniorComp = new ArrayList<>();
 
+    private ArrayList<Coach> coachJunior = new ArrayList<>();
+    private ArrayList<Coach> coachSenior = new ArrayList<>();
+
+
     private boolean changesMade = true;
 
     public boolean isChangesMade() {

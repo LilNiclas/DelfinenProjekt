@@ -11,6 +11,7 @@ public class Userinterface {
 
     public void start() {
         controller.createTestData();
+        controller.createTestDataCoach();
         System.out.println("\u001B[1mVelkommen til Delfin svømmeklub\u001B[0m");
         boolean menuError;
 
