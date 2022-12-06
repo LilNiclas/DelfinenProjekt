@@ -6,8 +6,12 @@ public class Database {
     private ArrayList<Member> database = new ArrayList<>();
     private ArrayList<Member> juniorComp = new ArrayList<>();
 
-    private ArrayList<Coach> coachJunior = new ArrayList<>();
-    private ArrayList<Coach> coachSenior = new ArrayList<>();
+    private ArrayList<Coach> coachData = new ArrayList<>();
+
+    private ArrayList<Time> practiceResults = new ArrayList<>();
+    private ArrayList<Time> tournamentResults = new ArrayList<>();
+
+    private Coach coach = new Coach();
 
 
     private boolean changesMade = true;
@@ -21,26 +25,25 @@ public class Database {
     }
 
     public Member createMember(String firstName, String lastName, boolean competitive, int age, boolean active, int membershipNumber) {
-
         Member member = new Member(firstName, lastName, competitive, age, active, membershipNumber);
         database.add(member);
 
         return member;
     }
 
-    public Coach createCoachJunior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
-        Coach trainer = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
-        coachJunior.add(trainer);
+    public Coach createCoach(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
+        Coach coach = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
+        coachData.add(coach);
 
-        return trainer;
+        return coach;
     }
 
-    public Coach createCoachSenior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
+    /*public Coach createCoachSenior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
         Coach coach = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
         coachSenior.add(coach);
 
         return coach;
-    }
+    }*/
 
     public void createTestData() {
         createMember("Bobby", "Wassabi", false, 22, true, 1);
@@ -51,19 +54,23 @@ public class Database {
     }
 
     public void createCoachData() {
-        createCoachJunior("Simon", "Leander", false, 72, true, 200, true);
-        createCoachSenior("Nidos", "Kräms", false, 23, true, 100, true);
+        createCoach("Simon", "Leander", false, 72, true, 200, true);
+        createCoach("Nidos", "Kräms", false, 23, true, 100, false);
     }
 
     public ArrayList<Member> getMembers() {
         return database;
     }
 
+    public ArrayList<Coach> getCoach() {
+        return coachData;
+    }
+
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member: database) {
+        for (Member member : database) {
             if (member.getFirstName().toLowerCase().contains(searchTerm.toLowerCase().trim())) {
                 searchResult.add(member);
             }
@@ -75,8 +82,8 @@ public class Database {
 
         ArrayList<Member> searchResult = new ArrayList<>();
 
-        for (Member member: database) {
-            if (member.getMembershipNumber()==searchNumber) {
+        for (Member member : database) {
+            if (member.getMembershipNumber() == searchNumber) {
                 searchResult.add(member);
             }
         }
@@ -92,7 +99,7 @@ public class Database {
         database.addAll(members);
     }
 
-    public void setJuniorOrSenior(){
+    public void setJuniorOrSenior() {
         for (Member member : database) {
             if (member.getAge() < 18) {
                 member.setJunior(true);
@@ -102,10 +109,10 @@ public class Database {
         }
     }
 
-    public double getTotalPayment () {
-        double yearlyPayment=0;
+    public double getTotalPayment() {
+        double yearlyPayment = 0;
         for (Member member : database) {
-            yearlyPayment+=member.getPayment();
+            yearlyPayment += member.getPayment();
         }
         return yearlyPayment;
     }
@@ -128,6 +135,24 @@ public class Database {
         }
         return null;
     }
+
+    public String getCoachFirstName() {
+        return coach.getFirstName();
+    }
+
+    public Time createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName,String date) {
+        Time time = new Time(timeResult, practice, placement, discipline, tournamentName,date);
+        tournamentResults.add(time);
+        return time;
+    }
+
+    public Time createPracticeResults(double timeResult, boolean practice, String discipline,String date) {
+        Time time = new Time(timeResult, practice, discipline,date);
+        practiceResults.add(time);
+        return time;
+    }
+
+}
 
 /*
     public void teamJteamS() {

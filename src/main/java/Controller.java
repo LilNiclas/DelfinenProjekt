@@ -29,6 +29,10 @@ public class Controller {
         return database.getMembers();
     }
 
+    public ArrayList<Coach> getCoaches() {
+        return database.getCoach();
+    }
+
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
         return database.searchMembersFirstName(searchTerm);
     }

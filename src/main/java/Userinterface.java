@@ -370,8 +370,8 @@ public class Userinterface {
     }
 
     public void showTeams() {
-        System.out.println("\u001B[1m1.\u001B[0m Se liste af Seinior");
-        System.out.println("\u001B[1m2.\u001B[0m Se liste af junior");
+        System.out.println("\u001B[1m1.\u001B[0m Se seniorhold");
+        System.out.println("\u001B[1m2.\u001B[0m Se juniorhold");
 
         int menu = scanner.nextInt();
         if (menu == 1) {
@@ -384,11 +384,19 @@ public class Userinterface {
             }
 
         } else if (menu == 2) {
-            System.out.println("Konkurrence junior svømmere");
+            System.out.println("\u001B[1mTræner:\u001B[0m");
+            for (Coach coach : controller.getCoaches()) {
+                if (coach.isCoach() == true) {
+                    System.out.println(coach.getFirstName() + " " + coach.getLastName());
+                }
+            }
+            System.out.println(" ");
+            System.out.println("\u001B[1mJunior svømmere:\u001B[0m");
             for (Member member : controller.getMembers()) {
-
-                System.out.println(member.getFirstName() + " " + member.getLastName() + " \n ");
-
+                controller.setJuniorOrSenior();
+                if (member.isJunior() == true) {
+                    System.out.println(member.getFirstName() + " " + member.getLastName() + " \n ");
+                }
             }
         }
     }

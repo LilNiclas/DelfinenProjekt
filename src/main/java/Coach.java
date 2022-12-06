@@ -8,7 +8,7 @@ public class Coach extends Member{
         this.isCoach=isCoach;
     }
 
-    public boolean getIsCoach() {
+    public boolean isCoach() {
         return isCoach;
     }
 }

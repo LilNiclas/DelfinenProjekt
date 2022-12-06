@@ -1,10 +1,17 @@
 public class Time {
-    private double Result;
-    private boolean Practice;
+    private double timeResult;
+    private boolean isPractice;
+    private int placement;
+    private String discipline;
+    private String tournamentName;
+    private String date;
 
-    public Time(double result, boolean practice) {
-        Result = result;
-        Practice = practice;
+
+    public Time(double timeResult, boolean isPractice, String discipline, String date) {
+        this.timeResult = timeResult;
+        this.isPractice = isPractice;
+        this.discipline = discipline;
+        this.date = date;
     }
 
     public double getResult() {
