@@ -7,20 +7,22 @@ public class Time {
     private String date;
 
 
-    public Time(double timeResult, boolean isPractice, String discipline, String date) {
+    public Time(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
         this.timeResult = timeResult;
         this.isPractice = isPractice;
         this.discipline = discipline;
         this.date = date;
+        this.membershipNumber = membershipNumber;
     }
 
-    public Time(double timeResult, boolean isPractice, int placement, String discipline, String tournamentName, String date) {
+    public Time(double timeResult, boolean isPractice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
         this.timeResult = timeResult;
         this.isPractice = isPractice;
         this.discipline = discipline;
         this.placement = placement;
         this.tournamentName = tournamentName;
         this.date = date;
+        this.membershipNumber = membershipNumber;
     }
 
 
