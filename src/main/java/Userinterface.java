@@ -517,16 +517,6 @@ public class Userinterface {
                 }
             } while (writingError == true);
 
-            /*if (editResult.isPractice() == true)
-                System.out.println("Resultatstype (type true/false): Træningsresultat");
-            else
-                System.out.println("Resultatstype (type true/false): Konkurrenceresultat");
-            String newPractice = scanner.nextLine().trim();
-            if (!newPractice.isEmpty()) {
-                editResult.setPractice(Boolean.parseBoolean(newPractice));
-            } else
-                System.out.println("\u001B[4mInvalid input\u001B[0m");*/
-
             System.out.println("Disciplin: " + editResult.getDiscipline());
             String newDisciplin = scanner.nextLine();
             if (!newDisciplin.isEmpty())
