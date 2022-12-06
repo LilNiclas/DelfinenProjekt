@@ -427,14 +427,18 @@ public class Userinterface {
         int menu = scanner.nextInt();
         if (menu == 1) {
             boolean isPractice = true;
-            System.out.println("Indtast træningstid i sekunder");
+
+            System.out.println("Indtast medlemsnummer:");
+            int membershipNumber = scanner.nextInt();
+
+            System.out.println("Indtast træningstid i sekunder:");
             double timeResult = scanner.nextDouble();
 
             scanner.nextLine();
-            System.out.println("Indtast disciplin");
+            System.out.println("Indtast disciplin:");
             String disciplin = scanner.nextLine();
 
-            System.out.println("Indtast dato");
+            System.out.println("Indtast dato:");
             String date = scanner.nextLine();
             System.out.println("\n");
 
@@ -444,23 +448,27 @@ public class Userinterface {
 
         } else if (menu == 2) {
             boolean isPractice = false;
-            System.out.println("Indtast konkurrencetid:");
+            System.out.println("Indtast medlemsnummer:");
+            int membershipNumber = scanner.nextInt();
+
+            System.out.println("Indtast konkurrencetid i sekunder:");
             double timeResult = scanner.nextDouble();
 
-            System.out.println("Indtast disciplin");
+            System.out.println("Indtast disciplin:");
             String disciplin = scanner.nextLine();
 
             scanner.nextLine();
-            System.out.println("Indtast placering");
+            System.out.println("Indtast placering:");
             int placement = scanner.nextInt();
             scanner.nextLine();
-            System.out.println("Indtast navn på stævne");
+            System.out.println("Indtast navn på stævne:");
             String tournamentName = scanner.nextLine();
 
-            System.out.println("indtast dato");
+            System.out.println("indtast dato:");
             String date = scanner.nextLine();
             System.out.println("\n");
-            controller.createTournamentResults(timeResult, isPractice, placement, disciplin, tournamentName, date);
+
+            controller.createTournamentResults(timeResult, isPractice, placement, disciplin, tournamentName, date, membershipNumber);
         }
 
     }

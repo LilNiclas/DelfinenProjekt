@@ -37,8 +37,8 @@ public class Controller {
         database.createTournamentResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
     }
 
-    public void createPracticeResults (double timeResult, boolean practice, String discipline,String date) {
-        database.createPracticeResults(timeResult, practice, discipline,date);
+    public void createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        database.createPracticeResults(timeResult, practice, discipline, date, membershipNumber);
     }
 
     public ArrayList<Member> getMembers() {

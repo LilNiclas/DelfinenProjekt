@@ -24,6 +24,13 @@ public class Time {
         this.date = date;
         this.membershipNumber = membershipNumber;
     }
+    public String getDiscipline() {
+        return discipline;
+    }
+
+    public void setDiscipline(String discipline) {
+        this.discipline = discipline;
+    }
 
 
     public double getResult() {

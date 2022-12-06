@@ -154,8 +154,8 @@ public class Database {
         return time;
     }
 
-    public Time createPracticeResults(double timeResult, boolean practice, String discipline,String date) {
-        Time time = new Time(timeResult, practice, discipline,date);
+    public Time createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        Time time = new Time(timeResult, practice, discipline, date, membershipNumber);
         practiceResults.add(time);
         return time;
     }
