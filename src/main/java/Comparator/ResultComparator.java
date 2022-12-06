@@ -9,3 +9,4 @@ public class ResultComparator implements Comparator<CompetetiveResults> {
         return Double.compare (t1.getTime(), t2.getTime());
     }
 }
+*/
