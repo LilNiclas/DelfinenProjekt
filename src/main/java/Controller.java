@@ -25,6 +25,14 @@ public class Controller {
         database.createCoachData();
     }
 
+    public void createTournamentResults (double timeResult, boolean practice, int placement, String discipline, String tournamentName,String date) {
+        database.createTournamentResults(timeResult, practice, placement, discipline, tournamentName,date);
+    }
+
+    public void createPracticeResults (double timeResult, boolean practice, String discipline,String date) {
+        database.createPracticeResults(timeResult, practice, discipline,date);
+    }
+
     public ArrayList<Member> getMembers() {
         return database.getMembers();
     }
@@ -74,6 +82,10 @@ public class Controller {
 
     public Member addSeniorTeam() {
         return database.addSeniorTeam();
+    }
+    
+    public String getCoachFirstName () {
+        return database.getCoachFirstName();
     }
 }
 

@@ -8,6 +8,9 @@ public class Coach extends Member{
         this.isCoach=isCoach;
     }
 
+    public Coach() {
+    }
+
     public boolean isCoach() {
         return isCoach;
     }

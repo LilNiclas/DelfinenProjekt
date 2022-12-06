@@ -386,12 +386,22 @@ public class Userinterface {
         int menu = scanner.nextInt();
         if (menu == 1) {
             System.out.println("");
-            for (Member member : controller.getMembers()) {
-                if (member.isJunior()==false) {
-                    System.out.println("Træner: "+);
-                    System.out.println(member.getFirstName());
+            System.out.println("\u001B[1mTræner:\u001B[0m");
+
+            for (Coach coach : controller.getCoaches()) {
+                if (coach.isCoach() == false) {
+                    System.out.println(coach.getFirstName() + " " + coach.getLastName());
                 }
             }
+            System.out.println(" ");
+            System.out.println("\u001B[1mSenior svømmere:\u001B[0m");
+            for (Member member : controller.getMembers()) {
+                controller.setJuniorOrSenior();
+                if (member.isJunior() == false) {
+                    System.out.println(member.getFirstName() + " \n ");
+                }
+            }
+
 
         } else if (menu == 2) {
             System.out.println("\u001B[1mTræner:\u001B[0m");
