@@ -1,4 +1,6 @@
 public class Time {
+
+    private int membershipNumber;
     private double timeResult;
     private boolean isPractice;
     private int placement;

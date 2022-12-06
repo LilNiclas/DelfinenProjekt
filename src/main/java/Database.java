@@ -38,13 +38,6 @@ public class Database {
         return coach;
     }
 
-    /*public Coach createCoachSenior(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {
-        Coach coach = new Coach(firstName, lastName, isCompetitive, age, isActive, membershipNumber, isCoach);
-        coachSenior.add(coach);
-
-        return coach;
-    }*/
-
     public void createTestData() {
         createMember("Bobby", "Wassabi", false, 22, true, 1);
         createMember("Michael", "Phelps", true, 37, false, 2);
@@ -56,6 +49,19 @@ public class Database {
     public void createCoachData() {
         createCoach("Simon", "Leander", false, 72, true, 200, true);
         createCoach("Nidos", "Kräms", false, 23, true, 100, false);
+    }
+
+    public void createTournamentResultTestData () {
+        createTournamentResults(126.2,false,3,"Butterfly 250 meter","El Classico","4/12-22",226);
+        createTournamentResults(1,false,1,"Crawl 100 meter","Champions League","30/12-22",777);
+        createTournamentResults(560,false,6,"Bryst 50 meter","Handicap Olympics","8/10-22",544);
+
+    }
+
+    public void createPracticeResultTestData () {
+        createPracticeResults(46.91, true,"Crawl 100 meter","14/10-2001",420);
+        createPracticeResults(106.71, true,"Hundesvømning 200 meter","16/7-2010",666);
+        createPracticeResults(56000000, true,"Brystsvømning 46km","9/11-2011",69);
     }
 
     public ArrayList<Member> getMembers() {

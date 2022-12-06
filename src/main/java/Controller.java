@@ -21,7 +21,7 @@ public class Controller {
         database.createTestData();
     }
 
-    public void createTestDataCoach () {
+    public void createTestDataCoach() {
         database.createCoachData();
     }
 
@@ -88,7 +88,7 @@ public class Controller {
         return database.deleteMembers(member);
     }
 
-    public double getTotalPayment () {
+    public double getTotalPayment() {
         return database.getTotalPayment();
     }
 
@@ -99,8 +99,8 @@ public class Controller {
     public Member addSeniorTeam() {
         return database.addSeniorTeam();
     }
-    
-    public String getCoachFirstName () {
+
+    public String getCoachFirstName() {
         return database.getCoachFirstName();
     }
 }

@@ -12,6 +12,8 @@ public class Userinterface {
     public void start() {
         controller.createTestData();
         controller.createTestDataCoach();
+        controller.createTournamentResultTestData();
+        controller.createPracticeResultTestData();
         System.out.println("\u001B[1mVelkommen til Delfin svømmeklub\u001B[0m");
         boolean menuError;
 
@@ -46,7 +48,7 @@ public class Userinterface {
                         seeResults();
                     } else if (menuChoice == 13) {
                         seeTopFive();
-                    }else if (menuChoice == 14) {
+                    } else if (menuChoice == 14) {
                         endProgram();
                     }
                     menuError = false;
@@ -473,7 +475,12 @@ public class Userinterface {
 
     }
 
-    public void editResults () {
+    public void editResults() {
+        boolean writingError;
+        System.out.println("\u001B[1m1.\u001B[0m Ændre træningsresultater");
+        System.out.println("\u001B[1m2.\u001B[0m Ændre konkurrenceresultater");
+        int menu = scanner.nextInt();
+        if (menu == 1) {
 
             System.out.println("Vælg den tid du vil ændre: ");
             for (int i = 0; i < controller.getPracticeResults().size(); i++) {
@@ -674,10 +681,20 @@ public class Userinterface {
 
             }
 
+        }
+
     }
 
-    public void seeTopFive () {
+    public void seeTopFive() {
+        System.out.println("\u001B[1m1.\u001B[0m Se top 5 svømmere for Junior");
+        System.out.println("\u001B[1m2.\u001B[0m Se top 5 svømmere for Senior");
+        int menu = scanner.nextInt();
+        if (menu == 1) {
 
+
+        } else if (menu == 2) {
+
+        }
     }
 
     public void endProgram() {
