@@ -14,6 +14,16 @@ public class Time {
         this.date = date;
     }
 
+    public Time(double timeResult, boolean isPractice, int placement, String discipline, String tournamentName, String date) {
+        this.timeResult = timeResult;
+        this.isPractice = isPractice;
+        this.discipline = discipline;
+        this.placement = placement;
+        this.tournamentName = tournamentName;
+        this.date = date;
+    }
+
+
     public double getResult() {
         return Result;
     }
@@ -26,7 +36,16 @@ public class Time {
         return Practice;
     }
 
-    public void setPractice(boolean practice) {
-        Practice = practice;
+    public void setPractice(boolean isPractice) {
+        this.isPractice = isPractice;
     }
+
+    public int getPlacement() {
+        return placement;
+    }
+
+    public void setPlacement(int placement) {
+        this.placement = placement;
+    }
+
 }

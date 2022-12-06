@@ -39,8 +39,14 @@ public class Userinterface {
                     } else if (menuChoice == 9) {
                         showTeams();
                     } else if (menuChoice == 10) {
-
-                    } else if (menuChoice == 15) {
+                        createResults();
+                    } else if (menuChoice == 11) {
+                        editResults();
+                    } else if (menuChoice == 12) {
+                        seeResults();
+                    } else if (menuChoice == 13) {
+                        seeTopFive();
+                    }else if (menuChoice == 14) {
                         endProgram();
                     }
                     menuError = false;
