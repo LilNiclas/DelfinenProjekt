@@ -467,7 +467,7 @@ public class Userinterface {
             String date = scanner.nextLine();
             System.out.println("\n");
 
-            controller.createTournamentResults(timeResult, isPractice, placement, disciplin, tournamentName, date, membershipNumber);
+            controller.createCompetetiveResults(timeResult, isPractice, placement, disciplin, tournamentName, date, membershipNumber);
         }
 
     }
