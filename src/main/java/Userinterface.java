@@ -70,7 +70,11 @@ public class Userinterface {
         System.out.println("\u001B[1m7.\u001B[0m Load sidste gem");
         System.out.println("\u001B[1m8.\u001B[0m Kontigentbetaling");
         System.out.println("\u001B[1m9.\u001B[0m Udskrivning af hold");
-        System.out.println("\u001B[1m15.\u001B[0m Afslut programmet");
+        System.out.println("\u001B[1m10.\u001B[0m Opret resultat");
+        System.out.println("\u001B[1m11.\u001B[0m Rediger resultater");
+        System.out.println("\u001B[1m12.\u001B[0m Udskriv resultater");
+        System.out.println("\u001B[1m13.\u001B[0m Udskriv top 5 svømmere");
+        System.out.println("\u001B[1m14.\u001B[0m Afslut programmet");
     }
 
     public void createMember() {
@@ -405,6 +409,61 @@ public class Userinterface {
                 }
             }
         }
+    }
+
+    public void createResults() {
+        System.out.println("\u001B[1m1.\u001B[0m Opret træningsresultater");
+        System.out.println("\u001B[1m2.\u001B[0m Opret konkurrenceresultater");
+        int menu = scanner.nextInt();
+        if (menu == 1) {
+            boolean isPractice = true;
+            System.out.println("Indtast træningstid i sekunder");
+            double timeResult = scanner.nextDouble();
+
+            scanner.nextLine();
+            System.out.println("Indtast disciplin");
+            String disciplin = scanner.nextLine();
+
+            System.out.println("Indtast dato");
+            String date = scanner.nextLine();
+            System.out.println("\n");
+
+            controller.createPracticeResults(timeResult, isPractice, disciplin, date);
+
+
+        } else if (menu == 2) {
+            boolean isPractice = false;
+            System.out.println("Indtast konkurrencetid:");
+            double timeResult = scanner.nextDouble();
+
+            System.out.println("Indtast disciplin");
+            String disciplin = scanner.nextLine();
+
+            scanner.nextLine();
+            System.out.println("Indtast placering");
+            int placement = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Indtast navn på stævne");
+            String tournamentName = scanner.nextLine();
+
+            System.out.println("indtast dato");
+            String date = scanner.nextLine();
+            System.out.println("\n");
+            controller.createTournamentResults(timeResult, isPractice, placement, disciplin, tournamentName, date);
+        }
+
+    }
+
+    public void editResults () {
+
+    }
+
+    public void seeResults () {
+
+    }
+
+    public void seeTopFive () {
+
     }
 
     public void endProgram() {

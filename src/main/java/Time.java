@@ -25,15 +25,15 @@ public class Time {
 
 
     public double getResult() {
-        return Result;
+        return timeResult;
     }
 
-    public void setResult(double result) {
-        Result = result;
+    public void setTimeResult(double timeResult) {
+        this.timeResult = timeResult;
     }
 
     public boolean isPractice() {
-        return Practice;
+        return isPractice;
     }
 
     public void setPractice(boolean isPractice) {
