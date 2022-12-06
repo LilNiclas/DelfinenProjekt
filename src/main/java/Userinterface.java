@@ -549,8 +549,8 @@ public class Userinterface {
         } else if (menu == 2) {
 
             System.out.println("Vælg den tid du vil ændre: ");
-            for (int i = 0; i < controller.getTournamentResults().size(); i++) {
-                System.out.println(i + 1 + ")" + controller.getTournamentResults().get(i));
+            for (int i = 0; i < controller.getCompetetiveResults().size(); i++) {
+                System.out.println(i + 1 + ")" + controller.getCompetetiveResults().get(i));
             }
 
             System.out.println("Indtast nummeret på den valgte tid: ");
@@ -562,7 +562,7 @@ public class Userinterface {
                     number = scanner.nextInt();
                     scanner.nextLine();
                     writingError = false;
-                    editResult = controller.getTournamentResults().get(number - 1);
+                    editResult = controller.getCompetetiveResults().get(number - 1);
                 } catch (InputMismatchException ime) {
                     System.out.println("Skriv kun numre, tak!");
                     scanner.nextLine();

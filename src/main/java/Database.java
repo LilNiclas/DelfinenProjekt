@@ -51,9 +51,9 @@ public class Database {
     }
 
     public void createTournamentResultTestData () {
-        createTournamentResults(126.2,false,3,"Butterfly 250 meter","El Classico","4/12-22",226);
-        createTournamentResults(1,false,1,"Crawl 100 meter","Champions League","30/12-22",777);
-        createTournamentResults(560,false,6,"Bryst 50 meter","Handicap Olympics","8/10-22",544);
+        createCompetetiveResults(126.2,false,3,"Butterfly 250 meter","El Classico","4/12-22",226);
+        createCompetetiveResults(1,false,1,"Crawl 100 meter","Champions League","30/12-22",777);
+        createCompetetiveResults(560,false,6,"Bryst 50 meter","Handicap Olympics","8/10-22",544);
 
     }
 

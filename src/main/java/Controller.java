@@ -33,8 +33,8 @@ public class Controller {
         database.createPracticeResultTestData();
     }
 
-    public void createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
-        database.createTournamentResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
+    public void createCompetetiveResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        database.createCompetetiveResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
     }
 
     public void createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
