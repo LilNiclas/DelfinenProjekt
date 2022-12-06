@@ -49,12 +49,12 @@ public class Controller {
         return database.getCoach();
     }
 
-    public ArrayList<Result> getPracticeResults() {
+    public ArrayList<PracticeResults> getPracticeResults() {
         return database.getPracticeResults();
     }
 
-    public ArrayList<Result> getTournamentResults() {
-        return database.getTournamentResults();
+    public ArrayList<CompetitiveResults> getCompetetiveResults() {
+        return database.getCompetetiveResults();
     }
 
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {

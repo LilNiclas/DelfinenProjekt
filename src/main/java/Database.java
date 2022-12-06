@@ -7,8 +7,8 @@ public class Database {
 
     private ArrayList<Coach> coachData = new ArrayList<>();
 
-    private ArrayList<Result> practiceResults = new ArrayList<>();
-    private ArrayList<Result> tournamentResults = new ArrayList<>();
+    private ArrayList<PracticeResults> practiceResult = new ArrayList<>();
+    private ArrayList<CompetitiveResults> competitiveResults = new ArrayList<>();
 
     private Coach coach = new Coach();
 
@@ -71,12 +71,12 @@ public class Database {
         return coachData;
     }
 
-    public ArrayList<Result> getPracticeResults() {
-        return practiceResults;
+    public ArrayList<PracticeResults> getPracticeResults() {
+        return practiceResult;
     }
 
-    public ArrayList<Result> getTournamentResults() {
-        return tournamentResults;
+    public ArrayList<CompetitiveResults> getCompetetiveResults() {
+        return competitiveResults;
     }
 
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
@@ -153,16 +153,16 @@ public class Database {
         return coach.getFirstName();
     }
 
-    public Result createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
-        Result result = new Result(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
-        tournamentResults.add(result);
-        return result;
+    public CompetitiveResults createCompetetiveResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        CompetitiveResults competitiveResultsesults = new CompetitiveResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
+        competitiveResults.add(competitiveResultsesults);
+        return competitiveResultsesults;
     }
 
-    public Result createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
-        Result result = new Result(timeResult, practice, discipline, date, membershipNumber);
-        practiceResults.add(result);
-        return result;
+    public PracticeResults createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        PracticeResults practiceResults = new PracticeResults(timeResult, practice, discipline, date, membershipNumber);
+        practiceResult.add(practiceResults);
+        return practiceResults;
     }
 
 }

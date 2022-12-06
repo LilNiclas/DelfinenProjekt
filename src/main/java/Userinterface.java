@@ -486,7 +486,7 @@ public class Userinterface {
 
             System.out.println("Indtast nummeret på den valgte tid: ");
             int number;
-            Result editResult = null;
+            PracticeResults editResult = null;
 
             do {
                 try {
@@ -544,6 +544,8 @@ public class Userinterface {
             if (!newDate.isEmpty())
                 editResult.setDate(newDate);
 
+
+
         } else if (menu == 2) {
 
             System.out.println("Vælg den tid du vil ændre: ");
@@ -553,7 +555,7 @@ public class Userinterface {
 
             System.out.println("Indtast nummeret på den valgte tid: ");
             int number;
-            Result editResult = null;
+            CompetitiveResults editResult = null;
 
             do {
                 try {
@@ -646,7 +648,7 @@ public class Userinterface {
         int menu = scanner.nextInt();
         if (menu == 1) {
             System.out.println("Træningresultater: " + "\n");
-            for (Result result : controller.getPracticeResults()) {
+            for (PracticeResults result : controller.getPracticeResults()) {
                 System.out.println("Medlemsnummer: " + result.getMembershipNumber());
                 System.out.println("Dicsiplin: " + result.getDiscipline());
                 System.out.println("Tid: " + result.getResult());
@@ -656,7 +658,7 @@ public class Userinterface {
 
             }
         } else if (menu == 2) {
-            for (Result result : controller.getTournamentResults()) {
+            for (CompetitiveResults result : controller.getCompetetiveResults()) {
                 System.out.println("Medlemsnummer: " + result.getMembershipNumber());
                 System.out.println("Disciplin: " + result.getDiscipline());
                 System.out.println("Tid: " + result.getResult());
