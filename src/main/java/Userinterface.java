@@ -1,9 +1,6 @@
-import ENUM.AgeEnums;
-
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.stream.DoubleStream;
 
 public class Userinterface {
     Scanner scanner = new Scanner(System.in);
@@ -489,7 +486,7 @@ public class Userinterface {
 
             System.out.println("Indtast nummeret på den valgte tid: ");
             int number;
-            Time editResult = null;
+            Result editResult = null;
 
             do {
                 try {
@@ -566,7 +563,7 @@ public class Userinterface {
 
             System.out.println("Indtast nummeret på den valgte tid: ");
             int number;
-            Time editResult = null;
+            Result editResult = null;
 
             do {
                 try {
@@ -659,23 +656,23 @@ public class Userinterface {
         int menu = scanner.nextInt();
         if (menu == 1) {
             System.out.println("Træningresultater: " + "\n");
-            for (Time time : controller.getPracticeResults()) {
-                System.out.println("Medlemsnummer: " + time.getMembershipNumber());
-                System.out.println("Dicsiplin: " + time.getDiscipline());
-                System.out.println("Tid: " + time.getResult());
-                System.out.println("Dato: " + time.getDate());
+            for (Result result : controller.getPracticeResults()) {
+                System.out.println("Medlemsnummer: " + result.getMembershipNumber());
+                System.out.println("Dicsiplin: " + result.getDiscipline());
+                System.out.println("Tid: " + result.getResult());
+                System.out.println("Dato: " + result.getDate());
                 System.out.println(" ");
 
 
             }
         } else if (menu == 2) {
-            for (Time time : controller.getTournamentResults()) {
-                System.out.println("Medlemsnummer: " + time.getMembershipNumber());
-                System.out.println("Disciplin: " + time.getDiscipline());
-                System.out.println("Tid: " + time.getResult());
-                System.out.println("Placering: " + time.getPlacement());
-                System.out.println("Dato: " + time.getDate());
-                System.out.println("Stævnenavn: " + time.getTournamentName());
+            for (Result result : controller.getTournamentResults()) {
+                System.out.println("Medlemsnummer: " + result.getMembershipNumber());
+                System.out.println("Disciplin: " + result.getDiscipline());
+                System.out.println("Tid: " + result.getResult());
+                System.out.println("Placering: " + result.getPlacement());
+                System.out.println("Dato: " + result.getDate());
+                System.out.println("Stævnenavn: " + result.getTournamentName());
                 System.out.println(" ");
 
 

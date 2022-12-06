@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.stream.DoubleStream;
 
 public class Database {
 
@@ -8,8 +7,8 @@ public class Database {
 
     private ArrayList<Coach> coachData = new ArrayList<>();
 
-    private ArrayList<Time> practiceResults = new ArrayList<>();
-    private ArrayList<Time> tournamentResults = new ArrayList<>();
+    private ArrayList<Result> practiceResults = new ArrayList<>();
+    private ArrayList<Result> tournamentResults = new ArrayList<>();
 
     private Coach coach = new Coach();
 
@@ -72,11 +71,11 @@ public class Database {
         return coachData;
     }
 
-    public ArrayList<Time> getPracticeResults() {
+    public ArrayList<Result> getPracticeResults() {
         return practiceResults;
     }
 
-    public ArrayList<Time> getTournamentResults() {
+    public ArrayList<Result> getTournamentResults() {
         return tournamentResults;
     }
 
@@ -154,16 +153,16 @@ public class Database {
         return coach.getFirstName();
     }
 
-    public Time createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
-        Time time = new Time(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
-        tournamentResults.add(time);
-        return time;
+    public Result createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        Result result = new Result(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
+        tournamentResults.add(result);
+        return result;
     }
 
-    public Time createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
-        Time time = new Time(timeResult, practice, discipline, date, membershipNumber);
-        practiceResults.add(time);
-        return time;
+    public Result createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        Result result = new Result(timeResult, practice, discipline, date, membershipNumber);
+        practiceResults.add(result);
+        return result;
     }
 
 }

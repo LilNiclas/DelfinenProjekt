@@ -1,4 +1,4 @@
-public class Time {
+public class Result {
 
     private int membershipNumber;
     private double timeResult;
@@ -9,7 +9,7 @@ public class Time {
     private String date;
 
 
-    public Time(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
+    public Result(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
         this.timeResult = timeResult;
         this.isPractice = isPractice;
         this.discipline = discipline;
@@ -17,7 +17,7 @@ public class Time {
         this.membershipNumber = membershipNumber;
     }
 
-    public Time(double timeResult, boolean isPractice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+    public Result(double timeResult, boolean isPractice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
         this.timeResult = timeResult;
         this.isPractice = isPractice;
         this.discipline = discipline;
@@ -26,6 +26,7 @@ public class Time {
         this.date = date;
         this.membershipNumber = membershipNumber;
     }
+
     public String getDiscipline() {
         return discipline;
     }
@@ -82,5 +83,21 @@ public class Time {
     public void setTournamentName(String tournamentName) {
         this.tournamentName = tournamentName;
     }
+
+/*
+    public String toStringPractice() {
+        return ("Medlemsnummer: " + membershipNumber + "\n" + "Disciplin: " + discipline + "\n" +
+                "Tid: " + timeResult + "\n" + "Dato: " + date + "\n");
+    }
+*/
+    public String toString() {
+        return ("Medlemsnummer: " + membershipNumber + "\n" + "Disciplin: " + discipline + "\n" +
+                "Tid: " + timeResult + "\n" + "Placering: " + placement + "\n" +
+                "Dato: " + date + "\n" + "Stævnenavn: " + tournamentName + "\n");
+    }
+
+
+
+
 
 }

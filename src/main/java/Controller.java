@@ -49,11 +49,11 @@ public class Controller {
         return database.getCoach();
     }
 
-    public ArrayList<Time> getPracticeResults() {
+    public ArrayList<Result> getPracticeResults() {
         return database.getPracticeResults();
     }
 
-    public ArrayList<Time> getTournamentResults() {
+    public ArrayList<Result> getTournamentResults() {
         return database.getTournamentResults();
     }
 

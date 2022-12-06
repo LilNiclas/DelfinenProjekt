@@ -1,7 +1,7 @@
 import ENUM.AgeEnums;
 
 public class Member {
-    private Time time;
+    private Result result;
     private Subscription subscription;
 
     private String firstName;
@@ -14,17 +14,6 @@ public class Member {
 
     public Member(){
     }
-
-    /* public Member(String firstName, String lastName, boolean competitive, int age, boolean active, int membershipNumber, boolean junior) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.competitive = competitive;
-        this.age = age;
-        this.active = active;
-        this.membershipNumber = membershipNumber;
-        this.junior = junior;
-        this.subscription = new Subscription(this);
-    } */
 
     public Member(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber) {
         this.firstName = firstName;
@@ -103,12 +92,6 @@ public class Member {
         }
     }
 
-    public String toString() {
-        return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
-                isCompetitive + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + isActive + " \n " + "Medlemsnummer: "
-                + membershipNumber + " \n " + "Medlems aldersgrupppe: " + isJunior + " \n ");
-    }
-
     public Subscription getSubscription () {
         return subscription;
     }
@@ -117,4 +100,9 @@ public class Member {
         return getSubscription().getSubscriptionPerMember();
     }
 
+    public String toString() {
+        return ("Fornavn: " + firstName + "\n" + "Efternavn: " + lastName + "\n" + "Svømmetype: " +
+                isCompetitive + "\n" + "Alder: " + age + "\n" + "Medlemsstatus: " + isActive + " \n " + "Medlemsnummer: "
+                + membershipNumber + " \n " + "Medlems aldersgrupppe: " + isJunior + " \n ");
+    }
 }
