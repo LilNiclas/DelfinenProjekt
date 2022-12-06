@@ -48,4 +48,28 @@ public class Time {
         this.placement = placement;
     }
 
+    public int getMembershipNumber() {
+        return membershipNumber;
+    }
+
+    public void setMembershipNumber(int membershipNumber) {
+        this.membershipNumber = membershipNumber;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getTournamentName() {
+        return tournamentName;
+    }
+
+    public void setTournamentName(String tournamentName) {
+        this.tournamentName = tournamentName;
+    }
+
 }

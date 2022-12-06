@@ -66,6 +66,14 @@ public class Database {
         return coachData;
     }
 
+    public ArrayList<Time> getPracticeResults() {
+        return practiceResults;
+    }
+
+    public ArrayList<Time> getTournamentResults() {
+        return tournamentResults;
+    }
+
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
 
         ArrayList<Member> searchResult = new ArrayList<>();
@@ -140,8 +148,8 @@ public class Database {
         return coach.getFirstName();
     }
 
-    public Time createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName,String date) {
-        Time time = new Time(timeResult, practice, placement, discipline, tournamentName,date);
+    public Time createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        Time time = new Time(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
         tournamentResults.add(time);
         return time;
     }

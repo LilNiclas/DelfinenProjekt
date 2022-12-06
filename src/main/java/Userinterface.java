@@ -197,20 +197,13 @@ public class Userinterface {
             }
         } while (writingError == true);
 
+
         System.out.println("Medlemsstatus: " + editMember.isActive());
         String newActive = scanner.nextLine();
-
         if (!newActive.isEmpty()) {
             while (!newActive.equals("p") && !newActive.equals("a")) {
                 System.out.println("Fejl. Tast \"a\" eller \"p\". ");
                 newActive = scanner.nextLine();
-
-                System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
-                String newMembershipNumber = scanner.nextLine();
-                if (!newMembershipNumber.isEmpty())
-                    editMember.setMembershipNumber(Integer.parseInt(newMembershipNumber));
-
-
             }
 
             boolean active;
@@ -220,6 +213,13 @@ public class Userinterface {
                 active = false;
             }
             editMember.setActive(active);
+
+
+            System.out.println("Medlemsnummer: " + editMember.getMembershipNumber());
+            String newMembershipNumber = scanner.nextLine();
+            if (!newMembershipNumber.isEmpty())
+                editMember.setMembershipNumber(Integer.parseInt(newMembershipNumber));
+
 
             controller.setJuniorOrSenior();
 
@@ -438,7 +438,8 @@ public class Userinterface {
             String date = scanner.nextLine();
             System.out.println("\n");
 
-            controller.createPracticeResults(timeResult, isPractice, disciplin, date);
+
+            controller.createPracticeResults(timeResult, isPractice, disciplin, date, membershipNumber);
 
 
         } else if (menu == 2) {
@@ -466,9 +467,204 @@ public class Userinterface {
 
     public void editResults () {
 
+            System.out.println("Vælg den tid du vil ændre: ");
+            for (int i = 0; i < controller.getPracticeResults().size(); i++) {
+                System.out.println(i + 1 + ")" + controller.getPracticeResults().get(i));
+            }
+
+            System.out.println("Indtast nummeret på den valgte tid: ");
+            int number;
+            Time editResult = null;
+
+            do {
+                try {
+                    number = scanner.nextInt();
+                    scanner.nextLine();
+                    writingError = false;
+                    editResult = controller.getPracticeResults().get(number - 1);
+                } catch (InputMismatchException ime) {
+                    System.out.println("Skriv kun numre, tak!");
+                    scanner.nextLine();
+                    writingError = true;
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Medlemsnummer: " + editResult.getMembershipNumber());
+            do {
+                String newMembershipNumber = scanner.nextLine().trim();
+                if (!newMembershipNumber.isEmpty()) {
+                    try {
+                        editResult.setMembershipNumber(Integer.parseInt(newMembershipNumber));
+                        writingError = false;
+
+                    } catch (NumberFormatException nfe) {
+                        System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                        writingError = true;
+                    }
+                }
+            } while (writingError == true);
+
+            /*if (editResult.isPractice() == true)
+                System.out.println("Resultatstype (type true/false): Træningsresultat");
+            else
+                System.out.println("Resultatstype (type true/false): Konkurrenceresultat");
+            String newPractice = scanner.nextLine().trim();
+            if (!newPractice.isEmpty()) {
+                editResult.setPractice(Boolean.parseBoolean(newPractice));
+            } else
+                System.out.println("\u001B[4mInvalid input\u001B[0m");*/
+
+            System.out.println("Disciplin: " + editResult.getDiscipline());
+            String newDisciplin = scanner.nextLine();
+            if (!newDisciplin.isEmpty())
+                editResult.setDiscipline(newDisciplin);
+
+
+            System.out.println("Tid: " + editResult.getResult());
+            do {
+                String newResult = scanner.nextLine().trim();
+                if (!newResult.isEmpty()) {
+                    try {
+                        editResult.setTimeResult(Integer.parseInt(newResult));
+                        writingError = false;
+
+                    } catch (NumberFormatException nfe) {
+                        System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                        writingError = true;
+                    }
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Dato: " + editResult.getDate());
+            String newDate = scanner.nextLine();
+            if (!newDate.isEmpty())
+                editResult.setDate(newDate);
+
+        } else if (menu == 2) {
+
+            System.out.println("Vælg den tid du vil ændre: ");
+            for (int i = 0; i < controller.getTournamentResults().size(); i++) {
+                System.out.println(i + 1 + ")" + controller.getTournamentResults().get(i));
+            }
+
+            System.out.println("Indtast nummeret på den valgte tid: ");
+            int number;
+            Time editResult = null;
+
+            do {
+                try {
+                    number = scanner.nextInt();
+                    scanner.nextLine();
+                    writingError = false;
+                    editResult = controller.getTournamentResults().get(number - 1);
+                } catch (InputMismatchException ime) {
+                    System.out.println("Skriv kun numre, tak!");
+                    scanner.nextLine();
+                    writingError = true;
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Medlemsnummer: " + editResult.getMembershipNumber());
+            do {
+                String newMembershipNumber = scanner.nextLine().trim();
+                if (!newMembershipNumber.isEmpty()) {
+                    try {
+                        editResult.setMembershipNumber(Integer.parseInt(newMembershipNumber));
+                        writingError = false;
+
+                    } catch (NumberFormatException nfe) {
+                        System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                        writingError = true;
+                    }
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Disciplin: " + editResult.getDiscipline());
+            String newDisciplin = scanner.nextLine();
+            if (!newDisciplin.isEmpty())
+                editResult.setDiscipline(newDisciplin);
+
+
+            System.out.println("Tid: " + editResult.getResult());
+            do {
+                String newResult = scanner.nextLine().trim();
+                if (!newResult.isEmpty()) {
+                    try {
+                        editResult.setTimeResult(Integer.parseInt(newResult));
+                        writingError = false;
+
+                    } catch (NumberFormatException nfe) {
+                        System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                        writingError = true;
+                    }
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Placering: " + editResult.getPlacement());
+            do {
+                String newPlacement = scanner.nextLine().trim();
+                if (!newPlacement.isEmpty()) {
+                    try {
+                        editResult.setTimeResult(Integer.parseInt(newPlacement));
+                        writingError = false;
+
+                    } catch (NumberFormatException nfe) {
+                        System.out.println("\u001B[4mInput fejl. Indtast tal.\u001B[0m");
+                        writingError = true;
+                    }
+                }
+            } while (writingError == true);
+
+
+            System.out.println("Dato: " + editResult.getDate());
+            String newDate = scanner.nextLine();
+            if (!newDate.isEmpty())
+                editResult.setDate(newDate);
+
+
+            System.out.println("Stævnenavn: " + editResult.getTournamentName());
+            String newTournamentName = scanner.nextLine();
+            if (!newTournamentName.isEmpty())
+                editResult.setTournamentName(newTournamentName);
+
+
+        }
     }
 
-    public void seeResults () {
+    public void seeResults() {
+
+
+        System.out.println("\u001B[1m1.\u001B[0m Se træningsresultater");
+        System.out.println("\u001B[1m2.\u001B[0m Se konkurrenceresultater");
+        int menu = scanner.nextInt();
+        if (menu == 1) {
+            System.out.println("Træningresultater: " + "\n");
+            for (Time time : controller.getPracticeResults()) {
+                System.out.println("Medlemsnummer: " + time.getMembershipNumber());
+                System.out.println("Dicsiplin: " + time.getDiscipline());
+                System.out.println("Tid: " + time.getResult());
+                System.out.println("Dato: " + time.getDate());
+                System.out.println(" ");
+
+
+            }
+        } else if (menu == 2) {
+            for (Time time : controller.getTournamentResults()) {
+                System.out.println("Medlemsnummer: " + time.getMembershipNumber());
+                System.out.println("Disciplin: " + time.getDiscipline());
+                System.out.println("Tid: " + time.getResult());
+                System.out.println("Placering: " + time.getPlacement());
+                System.out.println("Dato: " + time.getDate());
+                System.out.println("Stævnenavn: " + time.getTournamentName());
+                System.out.println(" ");
+
+
+            }
 
     }
 

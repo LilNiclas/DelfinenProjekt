@@ -25,8 +25,16 @@ public class Controller {
         database.createCoachData();
     }
 
-    public void createTournamentResults (double timeResult, boolean practice, int placement, String discipline, String tournamentName,String date) {
-        database.createTournamentResults(timeResult, practice, placement, discipline, tournamentName,date);
+    public void createTournamentResultTestData() {
+        database.createTournamentResultTestData();
+    }
+
+    public void createPracticeResultTestData() {
+        database.createPracticeResultTestData();
+    }
+
+    public void createTournamentResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        database.createTournamentResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
     }
 
     public void createPracticeResults (double timeResult, boolean practice, String discipline,String date) {
@@ -39,6 +47,14 @@ public class Controller {
 
     public ArrayList<Coach> getCoaches() {
         return database.getCoach();
+    }
+
+    public ArrayList<Time> getPracticeResults() {
+        return database.getPracticeResults();
+    }
+
+    public ArrayList<Time> getTournamentResults() {
+        return database.getTournamentResults();
     }
 
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
