@@ -725,27 +725,26 @@ public class Userinterface {
 
     }
 
-        public void seeTopFive () {
-            System.out.println("\u001B[1m1.\u001B[0m Se top 5 svømmere for Junior");
-            System.out.println("\u001B[1m2.\u001B[0m Se top 5 svømmere for Senior");
-            int menu = scanner.nextInt();
-            if (menu == 1) {
-                controller.sortTopFive();
-                System.out.println("Top 5 juniorsvømmere: "+"\n");
-                for(int i=0;i<5;i++) {
-                    for (PracticeResult practiceResult : controller.getPracticeResults()) {
-                        System.out.println(practiceResult.getDiscipline()+": " +practiceResult.getResult()+": " +practiceResult.getMembershipNumber());
-                    }
-                }
-
-
-            } else if (menu == 2) {
-                for(int i=0;i<5;i++) {
-
-
+    public void seeTopFive() {
+        System.out.println("\u001B[1m1.\u001B[0m Se top 5 svømmere for Junior");
+        System.out.println("\u001B[1m2.\u001B[0m Se top 5 svømmere for Senior");
+        int menu = scanner.nextInt();
+        if (menu == 1) {
+            controller.sortTopFive();
+            System.out.println("Top 5 juniorsvømmere: ");
+            for (PracticeResult practiceResult : controller.getPracticeResults()) {
+                for (int i = 0; i < 1; i++) {
+                    System.out.println(practiceResult.getDiscipline() + ": " + practiceResult.getResult() + ": " + practiceResult.getMembershipNumber());
                 }
             }
+
+        } else if (menu == 2) {
+            for (int i = 0; i < 5; i++) {
+
+
+            }
         }
+    }
 
     public void endProgram() {
         System.out.println("Lukker programmet... ");

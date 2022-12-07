@@ -64,16 +64,26 @@ public class Database {
     }
 
     public void createPracticeResultTestData () {
-        createPracticeResult(46, true,"Hundesvømning","14/10-2001",220);
-        createPracticeResult(20, true,"Hundesvømning","14/10-2001",320);
-        createPracticeResult(30, true,"Hundesvømning","14/10-2001",420);
-        createPracticeResult(25, true,"Hundesvømning","14/10-2001",520);
-        createPracticeResult(37, true,"Hundesvømning","16/7-2010",666);
-        createPracticeResult(52, true,"Brystsvømning","9/11-2011",12);
-        createPracticeResult(48, true,"Brystsvømning","9/11-2011",15);
-        createPracticeResult(45, true,"Brystsvømning","9/11-2011",24);
-        createPracticeResult(62, true,"Brystsvømning","9/11-2011",7);
-        createPracticeResult(68, true,"Brystsvømning","9/11-2011",25);
+        createPracticeResult(46, true,"Hundesvømning","14/10-2001",220, false);
+        createPracticeResult(20, true,"Hundesvømning","14/10-2001",320, false);
+        createPracticeResult(30, true,"Hundesvømning","14/10-2001",420, false);
+        createPracticeResult(25, true,"Hundesvømning","14/10-2001",520, false);
+        createPracticeResult(37, true,"Hundesvømning","16/7-2010",666, false);
+        createPracticeResult(46, true,"Hundesvømning","14/10-2001",220, true);
+        createPracticeResult(20, true,"Hundesvømning","14/10-2001",320, true);
+        createPracticeResult(30, true,"Hundesvømning","14/10-2001",420, true);
+        createPracticeResult(25, true,"Hundesvømning","14/10-2001",520, true);
+        createPracticeResult(37, true,"Hundesvømning","16/7-2010",666, true);
+        createPracticeResult(52, true,"Brystsvømning","9/11-2011",12, false);
+        createPracticeResult(48, true,"Brystsvømning","9/11-2011",15, false);
+        createPracticeResult(45, true,"Brystsvømning","9/11-2011",24, false);
+        createPracticeResult(62, true,"Brystsvømning","9/11-2011",7, false);
+        createPracticeResult(68, true,"Brystsvømning","9/11-2011",25, false);
+        createPracticeResult(52, true,"Brystsvømning","9/11-2011",12, true);
+        createPracticeResult(48, true,"Brystsvømning","9/11-2011",15, true);
+        createPracticeResult(45, true,"Brystsvømning","9/11-2011",24, true);
+        createPracticeResult(62, true,"Brystsvømning","9/11-2011",7, true);
+        createPracticeResult(68, true,"Brystsvømning","9/11-2011",25, true);
 
     }
 
@@ -163,8 +173,8 @@ public class Database {
         return competitiveResultsesults;
     }
 
-    public PracticeResult createPracticeResult(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
-        PracticeResult practiceResults = new PracticeResult(timeResult, practice, discipline, date, membershipNumber);
+    public PracticeResult createPracticeResult(double timeResult, boolean practice, String discipline, String date, int membershipNumber, boolean isJunior) {
+        PracticeResult practiceResults = new PracticeResult(timeResult, practice, discipline, date, membershipNumber, isJunior);
         practiceResult.add(practiceResults);
         return practiceResults;
     }
