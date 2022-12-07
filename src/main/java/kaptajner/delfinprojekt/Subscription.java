@@ -1,5 +1,6 @@
-import java.util.ArrayList;
-import ENUM.AgeEnums;
+package kaptajner.delfinprojekt;
+
+import kaptajner.delfinprojekt.agegroupenum.ageGroup;
 
 public class Subscription {
     private Member member;
@@ -14,11 +15,11 @@ public class Subscription {
     public double getSubscriptionPerMember() {
 
             if (member.isActive() == true) {
-                if (member.memberAgeGroup() == AgeEnums.UNDER_18) {
+                if (member.memberAgeGroup() == ageGroup.UNDER_18) {
                     payment = 1000;
-                } else if (member.memberAgeGroup() == AgeEnums.OVER_18) {
+                } else if (member.memberAgeGroup() == ageGroup.OVER_18) {
                     payment = 1600;
-                } else if (member.memberAgeGroup() == AgeEnums.OVER_60) {
+                } else if (member.memberAgeGroup() == ageGroup.OVER_60) {
                     payment = 1200;
                 }
             } else {

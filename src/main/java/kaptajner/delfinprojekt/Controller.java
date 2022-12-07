@@ -1,10 +1,12 @@
+package kaptajner.delfinprojekt;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Controller {
     private Database database;
-    private Subscription subscription;
     private FileHandler fileHandler;
+    private Member member;
 
 
     public Controller() {
@@ -33,12 +35,12 @@ public class Controller {
         database.createPracticeResultTestData();
     }
 
-    public void createCompetetiveResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
-        database.createCompetetiveResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
+    public void createCompetetiveResult(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        database.createCompetetiveResult(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
     }
 
-    public void createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
-        database.createPracticeResults(timeResult, practice, discipline, date, membershipNumber);
+    public void createPracticeResult(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        database.createPracticeResult(timeResult, practice, discipline, date, membershipNumber);
     }
 
     public ArrayList<Member> getMembers() {
@@ -49,11 +51,11 @@ public class Controller {
         return database.getCoach();
     }
 
-    public ArrayList<PracticeResults> getPracticeResults() {
+    public ArrayList<PracticeResult> getPracticeResults() {
         return database.getPracticeResults();
     }
 
-    public ArrayList<CompetitiveResults> getCompetetiveResults() {
+    public ArrayList<CompetitiveResult> getCompetetiveResults() {
         return database.getCompetetiveResults();
     }
 
@@ -81,7 +83,7 @@ public class Controller {
     }
 
     public void setJuniorOrSenior() {
-        database.setJuniorOrSenior();
+        member.setJuniorOrSenior();
     }
 
     public boolean deleteMember(Member member) {
@@ -102,6 +104,10 @@ public class Controller {
 
     public String getCoachFirstName() {
         return database.getCoachFirstName();
+    }
+
+    public void sortTopFive () {
+        database.sortTopFive();
     }
 }
 

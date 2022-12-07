@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Added kontingent per person">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/comparators/DisciplineComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/comparators/ResultComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Coach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CompetitiveResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/CompetitiveResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ENUM/AgeEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/agegroupenum/ageGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PracticeResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/PracticeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" />
     </list>
     <list id="4c1b2792-a825-4228-af5c-90ddadd8d206" name="Changes by kjartanleander" comment="" />
-    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Added nidos">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Userinterface.java" afterDir="false" />
+    <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Added nidos" />
+    <list id="1a197357-86b1-4955-96cc-436784a53403" name="Changes by Simon Bang Dessau" comment="Changes by Simon Bang Dessau">
+      <change beforePath="$PROJECT_DIR$/src/main/java/PracticeResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/PracticeResult.java" afterDir="false" />
     </list>
-    <list id="1a197357-86b1-4955-96cc-436784a53403" name="Changes by Simon Bang Dessau" comment="Changes by Simon Bang Dessau" />
-    <list id="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" name="Changes by tobias" comment="Changes by tobias" />
+    <list id="b7b1e7ca-6024-4f9a-9d73-0d929e0b4bcc" name="Changes by tobias" comment="Changes by tobias">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Comparator/DisciplinComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Comparator/ResultComparator.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +51,15 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Userinterface.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/Userinterface.java">
+    <file path="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/PracticeResult.java">
       <ranges>
-        <range start1="13" end1="14" start2="13" end2="14" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="53" end1="54" start2="53" end2="54" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="64" end1="65" start2="64" end2="76" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="251" end1="256" start2="262" end2="267" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="353" end1="357" start2="364" end2="367" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="364" end1="364" start2="374" end2="375" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="365" end1="366" start2="376" end2="377" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="367" end1="368" start2="378" end2="379" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="369" end1="370" start2="380" end2="381" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="371" end1="372" start2="382" end2="382" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="0" end1="1" start2="0" end2="3" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="7" end1="7" start2="9" end2="10" changelist="1a197357-86b1-4955-96cc-436784a53403" />
+        <range start1="9" end1="10" start2="12" end2="13" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
+        <range start1="15" end1="15" start2="18" end2="19" changelist="1a197357-86b1-4955-96cc-436784a53403" />
       </ranges>
     </file>
   </component>
@@ -75,6 +84,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,6 +114,7 @@
       <workItem from="1669198241983" duration="10498000" />
       <workItem from="1669285234445" duration="7638000" />
       <workItem from="1669379185997" duration="18834000" />
+      <workItem from="1670401419792" duration="6143000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>

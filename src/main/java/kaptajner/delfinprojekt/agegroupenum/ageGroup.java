@@ -1,6 +1,6 @@
-package ENUM;
+package kaptajner.delfinprojekt.agegroupenum;
 
-public enum AgeEnums {
+public enum ageGroup {
     UNDER_18,
     OVER_18,
     OVER_60,

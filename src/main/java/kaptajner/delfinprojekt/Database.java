@@ -1,4 +1,10 @@
+package kaptajner.delfinprojekt;
+
+import kaptajner.delfinprojekt.comparators.DisciplineComparator;
+import kaptajner.delfinprojekt.comparators.ResultComparator;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Database {
 
@@ -7,8 +13,8 @@ public class Database {
 
     private ArrayList<Coach> coachData = new ArrayList<>();
 
-    private ArrayList<PracticeResults> practiceResult = new ArrayList<>();
-    private ArrayList<CompetitiveResults> competitiveResults = new ArrayList<>();
+    private ArrayList<PracticeResult> practiceResult = new ArrayList<>();
+    private ArrayList<CompetitiveResult> competitiveResult = new ArrayList<>();;
 
     private Coach coach = new Coach();
 
@@ -51,16 +57,24 @@ public class Database {
     }
 
     public void createTournamentResultTestData () {
-        createCompetetiveResults(126.2,false,3,"Butterfly 250 meter","El Classico","4/12-22",226);
-        createCompetetiveResults(1,false,1,"Crawl 100 meter","Champions League","30/12-22",777);
-        createCompetetiveResults(560,false,6,"Bryst 50 meter","Handicap Olympics","8/10-22",544);
+        createCompetetiveResult(126.2,false,3,"Butterfly 250 meter","El Classico","4/12-22",226);
+        createCompetetiveResult(1,false,1,"Crawl 100 meter","Champions League","30/12-22",777);
+        createCompetetiveResult(560,false,6,"Bryst 50 meter","Handicap Olympics","8/10-22",544);
 
     }
 
     public void createPracticeResultTestData () {
-        createPracticeResults(46.91, true,"Crawl 100 meter","14/10-2001",420);
-        createPracticeResults(106.71, true,"Hundesvømning 200 meter","16/7-2010",666);
-        createPracticeResults(56000000, true,"Brystsvømning 46km","9/11-2011",69);
+        createPracticeResult(46, true,"Hundesvømning","14/10-2001",220);
+        createPracticeResult(20, true,"Hundesvømning","14/10-2001",320);
+        createPracticeResult(30, true,"Hundesvømning","14/10-2001",420);
+        createPracticeResult(25, true,"Hundesvømning","14/10-2001",520);
+        createPracticeResult(37, true,"Hundesvømning","16/7-2010",666);
+        createPracticeResult(52, true,"Brystsvømning","9/11-2011",12);
+        createPracticeResult(48, true,"Brystsvømning","9/11-2011",15);
+        createPracticeResult(45, true,"Brystsvømning","9/11-2011",24);
+        createPracticeResult(62, true,"Brystsvømning","9/11-2011",7);
+        createPracticeResult(68, true,"Brystsvømning","9/11-2011",25);
+
     }
 
     public ArrayList<Member> getMembers() {
@@ -71,12 +85,12 @@ public class Database {
         return coachData;
     }
 
-    public ArrayList<PracticeResults> getPracticeResults() {
+    public ArrayList<PracticeResult> getPracticeResults() {
         return practiceResult;
     }
 
-    public ArrayList<CompetitiveResults> getCompetetiveResults() {
-        return competitiveResults;
+    public ArrayList<CompetitiveResult> getCompetetiveResults() {
+        return competitiveResult;
     }
 
     public ArrayList<Member> searchMembersFirstName(String searchTerm) {
@@ -112,16 +126,6 @@ public class Database {
         database.addAll(members);
     }
 
-    public void setJuniorOrSenior() {
-        for (Member member : database) {
-            if (member.getAge() < 18) {
-                member.setJunior(true);
-            } else if (member.getAge() < 18) {
-                member.setJunior(false);
-            }
-        }
-    }
-
     public double getTotalPayment() {
         double yearlyPayment = 0;
         for (Member member : database) {
@@ -153,27 +157,21 @@ public class Database {
         return coach.getFirstName();
     }
 
-    public CompetitiveResults createCompetetiveResults(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
-        CompetitiveResults competitiveResultsesults = new CompetitiveResults(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
-        competitiveResults.add(competitiveResultsesults);
+    public CompetitiveResult createCompetetiveResult(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
+        CompetitiveResult competitiveResultsesults = new CompetitiveResult(timeResult, practice, placement, discipline, tournamentName, date, membershipNumber);
+        competitiveResult.add(competitiveResultsesults);
         return competitiveResultsesults;
     }
 
-    public PracticeResults createPracticeResults(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
-        PracticeResults practiceResults = new PracticeResults(timeResult, practice, discipline, date, membershipNumber);
+    public PracticeResult createPracticeResult(double timeResult, boolean practice, String discipline, String date, int membershipNumber) {
+        PracticeResult practiceResults = new PracticeResult(timeResult, practice, discipline, date, membershipNumber);
         practiceResult.add(practiceResults);
         return practiceResults;
     }
 
+    public void sortTopFive () {
+        Collections.sort(practiceResult, new DisciplineComparator().thenComparing(new ResultComparator()));
+    }
+
 }
 
-/*
-    public void teamJteamS() {
-        for(Member member : database) {
-            if (member.isJunior()==true) {
-                coachJunior.add(member);
-            } else {
-                coa
-            }
-        }
-    }*/

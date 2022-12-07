@@ -1,3 +1,5 @@
+package kaptajner.delfinprojekt;
+
 public class Coach extends Member{
 
 

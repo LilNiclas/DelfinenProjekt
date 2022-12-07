@@ -1,4 +1,6 @@
-public class PracticeResults {
+package kaptajner.delfinprojekt;
+
+public class PracticeResult {
 
     private int membershipNumber;
     private double timeResult;
@@ -7,7 +9,7 @@ public class PracticeResults {
     private String date;
 
 
-    public PracticeResults(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
+    public PracticeResult(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
         this.timeResult = timeResult;
         this.isPractice = isPractice;
         this.discipline = discipline;
