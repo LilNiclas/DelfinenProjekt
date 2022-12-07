@@ -7,6 +7,7 @@ public class PracticeResult {
     private boolean isPractice;
     private String discipline;
     private String date;
+    //private boolean isJunior;
 
 
     public PracticeResult(double timeResult, boolean isPractice, String discipline, String date, int membershipNumber) {
@@ -15,6 +16,7 @@ public class PracticeResult {
         this.discipline = discipline;
         this.date = date;
         this.membershipNumber = membershipNumber;
+        //this.isJunior = isJunior;
     }
 
     public String getDiscipline() {
