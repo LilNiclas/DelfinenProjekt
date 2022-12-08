@@ -14,8 +14,6 @@ public class Member {
     private int membershipNumber;
     private boolean isJunior;
 
-    private Database database;
-
     public Member() {
     }
 

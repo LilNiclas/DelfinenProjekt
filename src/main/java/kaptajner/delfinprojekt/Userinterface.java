@@ -2,6 +2,7 @@ package kaptajner.delfinprojekt;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Userinterface {
@@ -690,8 +691,6 @@ public class Userinterface {
     }
 
     public void seeResults() {
-
-
         System.out.println("\u001B[1m1.\u001B[0m Se træningsresultater");
         System.out.println("\u001B[1m2.\u001B[0m Se konkurrenceresultater");
         int menu = scanner.nextInt();
@@ -724,23 +723,63 @@ public class Userinterface {
 
     }
 
+    public ArrayList<PracticeResult> findJuniorResults () {
+        ArrayList<PracticeResult> practiceResultsJunior = new ArrayList<>();
+        for(PracticeResult result : controller.getPracticeResults()) {
+            if(result.isJunior()) {
+                practiceResultsJunior.add(result);
+            }
+        }
+        return practiceResultsJunior;
+    }
+
+    public ArrayList<PracticeResult> findSeniorResults () {
+        ArrayList<PracticeResult> practiceResultsSenior = new ArrayList<>();
+        for(PracticeResult result : controller.getPracticeResults()) {
+            if(!result.isJunior()) {
+                practiceResultsSenior.add(result);
+            }
+        }
+        return practiceResultsSenior;
+    }
+
+    public List<PracticeResult> getTopFive (ArrayList<PracticeResult> results) {
+        List<PracticeResult> list = results;
+        if(results.size()>5) {
+            return list.subList(0,5);
+        }
+        return results;
+    }
+
     public void seeTopFive() {
         System.out.println("\u001B[1m1.\u001B[0m Se top 5 svømmere for Junior");
         System.out.println("\u001B[1m2.\u001B[0m Se top 5 svømmere for Senior");
         int menu = scanner.nextInt();
         if (menu == 1) {
             controller.sortTopFive();
-            System.out.println("Top 5 juniorsvømmere: ");
-            for (PracticeResult practiceResult : controller.getPracticeResults()) {
-                for (int i = 0; i < 1; i++) {
-                    System.out.println(practiceResult.getDiscipline() + ": " + practiceResult.getResult() + ": " + practiceResult.getMembershipNumber());
-                }
+            System.out.println("Top 5 juniorsvømmere: " + "\n");
+
+            ArrayList<PracticeResult> juniorResults = findJuniorResults();
+            List<PracticeResult> juniorResultsTopFive = getTopFive(juniorResults);
+
+            for(PracticeResult practiceResult : juniorResultsTopFive) {
+                System.out.println("Discpline: " + practiceResult.getDiscipline() + "\n" +
+                        "Resultat: " + practiceResult.getResult() + "\n" +
+                        "Medlemsnummer: " + practiceResult.getMembershipNumber() + "\n");
+
             }
 
         } else if (menu == 2) {
-            for (int i = 0; i < 5; i++) {
+            controller.sortTopFive();
+            System.out.println("Top 5 seniorsvømmere: " + "\n");
 
+            ArrayList<PracticeResult> seniorResults = findSeniorResults();
+            List<PracticeResult> seniorResultsTopFive = getTopFive(seniorResults);
 
+            for(PracticeResult practiceResult : seniorResultsTopFive) {
+                System.out.println("Discpline: " + practiceResult.getDiscipline() + "\n" +
+                        "Resultat: " + practiceResult.getResult() + "\n" +
+                        "Medlemsnummer: "+ practiceResult.getMembershipNumber() + "\n");
             }
         }
     }
