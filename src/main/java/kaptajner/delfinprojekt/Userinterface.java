@@ -197,11 +197,14 @@ public class Userinterface {
             editMember.setLastName(newLName);
 
 
-        System.out.println("Svømmetype: " + editMember.isCompetitive());
+        System.out.println("Svømmetype: (Skriv motionist eller konkurrence)" + editMember.isCompetitive());
         String newSwimtype = scanner.nextLine();
-        if (!newSwimtype.isEmpty())
-            editMember.setCompetitive(Boolean.parseBoolean(newSwimtype));
-
+        if (!newSwimtype.isEmpty()) {
+            while (!newSwimtype.equals("motionist") && !newSwimtype.equals("konkurrence")) {
+                System.out.println("\u001B[4mFejl. Tast motionist eller konkurrence\u001B[0");
+                newSwimtype = scanner.nextLine();
+            }
+        }
 
         System.out.println("Alder: " + editMember.getAge());
         do {
@@ -219,7 +222,7 @@ public class Userinterface {
         } while (writingError == true);
 
 
-        System.out.println("Medlemsstatus: " + editMember.isActive());
+        System.out.println("Medlemsstatus: (Skriv aktiv eller passiv)" + editMember.isActive());
         String newActive = scanner.nextLine();
         if (!newActive.isEmpty()) {
             while (!newActive.equals("passiv") && !newActive.equals("aktiv")) {
@@ -495,13 +498,11 @@ public class Userinterface {
             } while (writingError == true);
 
 
-            scanner.nextLine();
             System.out.println("Indtast disciplin:");
             String disciplin = scanner.nextLine();
 
             System.out.println("Indtast dato:");
             String date = scanner.nextLine();
-            System.out.println("\n");
 
             System.out.println("Indtast alder:");
             boolean isJunior;
@@ -604,6 +605,8 @@ public class Userinterface {
                 }
             } while (writingError == true);
 
+
+
             System.out.println("Medlemsnummer: " + editResult.getMembershipNumber());
             do {
                 String newMembershipNumber = scanner.nextLine().trim();
@@ -646,24 +649,6 @@ public class Userinterface {
             String newDate = scanner.nextLine();
             if (!newDate.isEmpty())
                 editResult.setDate(newDate);
-
-            System.out.println("Aldergruppe: " + editResult.isJunior());
-            String newActive = scanner.nextLine();
-            if (!newActive.isEmpty()) {
-                while (!newActive.equals("s") && !newActive.equals("j")) {
-                    System.out.println("Fejl. Tast \"s\" eller \"j\". ");
-                    newActive = scanner.nextLine();
-                }
-
-                boolean senior;
-                if (newActive.equals("s")) {
-                    senior = true;
-                } else {
-                    senior = false;
-                }
-                editResult.setJunior(senior);
-            }
-
 
         } else if (menu == 2) {
 
