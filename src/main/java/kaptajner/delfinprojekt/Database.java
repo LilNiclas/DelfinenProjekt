@@ -8,6 +8,7 @@ import java.util.Collections;
 
 public class Database {
 
+
     private ArrayList<Member> database = new ArrayList<>();
     private ArrayList<Member> juniorComp = new ArrayList<>();
 
@@ -144,27 +145,14 @@ public class Database {
         return yearlyPayment;
     }
 
-    public Member addSeniorTeam() {
+    public void setJuniorOrSenior() {
         for (Member member : database) {
-            if (member.isJunior() == false) {
-                return member;
+            if (member.getAge() < 18) {
+                member.setJunior(true);
+            } else if (member.getAge() < 18) {
+                member.setJunior(false);
             }
         }
-        return null;
-
-    }
-
-    public ArrayList<Member> addJuniorTeam() {
-        for (Member member : database) {
-            if (member.isJunior() == true) {
-                juniorComp.add(member);
-            }
-        }
-        return null;
-    }
-
-    public String getCoachFirstName() {
-        return coach.getFirstName();
     }
 
     public CompetitiveResult createCompetetiveResult(double timeResult, boolean practice, int placement, String discipline, String tournamentName, String date, int membershipNumber) {
@@ -182,6 +170,7 @@ public class Database {
     public void sortTopFive () {
         Collections.sort(practiceResult, new ResultComparator());
     }
+
 
 }
 

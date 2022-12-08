@@ -2,7 +2,6 @@ package kaptajner.delfinprojekt;
 
 public class Coach extends Member{
 
-
     private boolean isCoach;
 
     public Coach(String firstName, String lastName, boolean isCompetitive, int age, boolean isActive, int membershipNumber, boolean isCoach) {

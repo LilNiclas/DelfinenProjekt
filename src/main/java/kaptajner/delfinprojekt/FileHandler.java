@@ -13,10 +13,6 @@ public class FileHandler {
         this.database = database;
     }
 
-    public void Controller(Database isChangesMade) {
-        this.database = isChangesMade;
-    }
-
 
     public void saveData(ArrayList<Member> members) throws FileNotFoundException {
 

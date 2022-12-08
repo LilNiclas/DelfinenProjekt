@@ -83,7 +83,7 @@ public class Controller {
     }
 
     public void setJuniorOrSenior() {
-        member.setJuniorOrSenior();
+        database.setJuniorOrSenior();
     }
 
     public boolean deleteMember(Member member) {
@@ -92,18 +92,6 @@ public class Controller {
 
     public double getTotalPayment() {
         return database.getTotalPayment();
-    }
-
-    public ArrayList<Member> addJuniorTeam() {
-        return database.addJuniorTeam();
-    }
-
-    public Member addSeniorTeam() {
-        return database.addSeniorTeam();
-    }
-
-    public String getCoachFirstName() {
-        return database.getCoachFirstName();
     }
 
     public void sortTopFive () {
