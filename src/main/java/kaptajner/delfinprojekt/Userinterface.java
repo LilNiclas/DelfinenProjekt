@@ -60,7 +60,6 @@ public class Userinterface {
         } while (true);
     }
 
-
     public int validateInt() {
         boolean writingError = false;
         do {
