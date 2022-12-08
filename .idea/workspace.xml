@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Refatureret flertal til ental, omrokeret packages, ændret i junior senior metode og forenklet kode.">
+    <list default="true" id="58649a75-5b6f-421e-a665-9d8f42d7a5da" name="Changes" comment="Startet på opdeling af agegroups og kontingent betaling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" afterDir="false" />
     </list>
-    <list id="4c1b2792-a825-4228-af5c-90ddadd8d206" name="Changes by kjartanleander" comment="" />
     <list id="deb14680-dd30-4f4b-9958-487a4a578415" name="Changes by nicla" comment="Added nidos">
       <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" afterDir="false" />
     </list>
     <list id="44037941-d32f-46ee-a7a1-f326bf897453" name="Changes by tobias" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/PracticeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/PracticeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,110 +40,14 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/main/java/kaptajner/delfinprojekt/Userinterface.java">
       <ranges>
-        <range start1="63" end1="64" start2="63" end2="64" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="70" end1="71" start2="70" end2="71" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="77" end1="78" start2="77" end2="78" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="79" end1="94" start2="79" end2="94" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="95" end1="99" start2="95" end2="99" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="100" end1="102" start2="100" end2="102" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="103" end1="116" start2="103" end2="116" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="117" end1="118" start2="117" end2="118" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="120" end1="122" start2="120" end2="122" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="123" end1="136" start2="123" end2="136" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="137" end1="138" start2="137" end2="138" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="140" end1="142" start2="140" end2="142" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="144" end1="146" start2="144" end2="146" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="147" end1="148" start2="147" end2="148" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="149" end1="151" start2="149" end2="151" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="152" end1="153" start2="152" end2="153" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="154" end1="157" start2="154" end2="157" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="158" end1="171" start2="158" end2="171" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="172" end1="177" start2="172" end2="177" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="179" end1="181" start2="179" end2="181" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="182" end1="186" start2="182" end2="186" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="188" end1="192" start2="188" end2="192" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="194" end1="198" start2="194" end2="198" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="200" end1="207" start2="200" end2="207" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="208" end1="214" start2="208" end2="214" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="216" end1="223" start2="216" end2="223" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="224" end1="231" start2="224" end2="231" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="233" end1="237" start2="233" end2="237" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="239" end1="240" start2="239" end2="240" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="241" end1="243" start2="241" end2="243" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="244" end1="246" start2="244" end2="246" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="247" end1="264" start2="247" end2="264" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="265" end1="273" start2="265" end2="273" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="274" end1="276" start2="274" end2="276" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="277" end1="279" start2="277" end2="279" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="280" end1="282" start2="280" end2="282" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="284" end1="285" start2="284" end2="285" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="286" end1="291" start2="286" end2="291" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="292" end1="293" start2="292" end2="293" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="294" end1="322" start2="294" end2="322" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="323" end1="327" start2="323" end2="327" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="328" end1="329" start2="328" end2="329" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="330" end1="359" start2="330" end2="359" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="360" end1="361" start2="360" end2="361" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="362" end1="367" start2="362" end2="367" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="368" end1="371" start2="368" end2="371" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="372" end1="376" start2="372" end2="376" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="377" end1="381" start2="377" end2="381" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="382" end1="386" start2="382" end2="386" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="387" end1="390" start2="387" end2="390" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="391" end1="398" start2="391" end2="398" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="399" end1="403" start2="399" end2="403" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="404" end1="407" start2="404" end2="407" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="408" end1="412" start2="408" end2="412" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="413" end1="426" start2="413" end2="426" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="428" end1="445" start2="428" end2="445" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="446" end1="452" start2="446" end2="452" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="453" end1="455" start2="453" end2="455" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="456" end1="458" start2="456" end2="458" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="459" end1="462" start2="459" end2="462" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="463" end1="466" start2="463" end2="466" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="467" end1="469" start2="467" end2="477" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="471" end1="475" start2="479" end2="483" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="476" end1="478" start2="484" end2="486" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="479" end1="481" start2="487" end2="489" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="482" end1="488" start2="490" end2="496" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="489" end1="492" start2="497" end2="500" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="493" end1="495" start2="501" end2="503" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="496" end1="497" start2="504" end2="505" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="498" end1="504" start2="506" end2="512" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="505" end1="509" start2="513" end2="517" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="510" end1="513" start2="518" end2="521" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="514" end1="515" start2="522" end2="534" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="516" end1="523" start2="535" end2="542" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="524" end1="530" start2="543" end2="549" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="531" end1="535" start2="550" end2="557" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="537" end1="544" start2="559" end2="566" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="545" end1="551" start2="567" end2="573" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="553" end1="557" start2="575" end2="579" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="558" end1="558" start2="580" end2="597" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="559" end1="560" start2="598" end2="599" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="561" end1="565" start2="600" end2="604" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="566" end1="569" start2="605" end2="608" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="570" end1="582" start2="609" end2="621" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="584" end1="591" start2="623" end2="630" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="592" end1="598" start2="631" end2="637" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="600" end1="604" start2="639" end2="643" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="606" end1="613" start2="645" end2="652" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="614" end1="620" start2="653" end2="659" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="622" end1="629" start2="661" end2="668" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="630" end1="636" start2="669" end2="675" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="638" end1="642" start2="677" end2="681" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="644" end1="648" start2="683" end2="687" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="650" end1="652" start2="689" end2="691" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="653" end1="654" start2="692" end2="693" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="656" end1="667" start2="695" end2="707" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="669" end1="679" start2="709" end2="719" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="681" end1="682" start2="721" end2="722" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="683" end1="684" start2="723" end2="724" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="685" end1="686" start2="725" end2="726" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
-        <range start1="687" end1="699" start2="727" end2="741" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="701" end1="703" start2="743" end2="745" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="705" end1="708" start2="747" end2="749" changelist="58649a75-5b6f-421e-a665-9d8f42d7a5da" />
-        <range start1="709" end1="714" start2="750" end2="755" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="4" end1="4" start2="4" end2="5" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="62" end1="63" start2="63" end2="63" changelist="deb14680-dd30-4f4b-9958-487a4a578415" />
+        <range start1="693" end1="695" start2="693" end2="693" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="726" end1="726" start2="724" end2="752" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="733" end1="738" start2="759" end2="769" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="741" end1="742" start2="772" end2="774" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="743" end1="743" start2="775" end2="777" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
+        <range start1="744" end1="744" start2="778" end2="782" changelist="44037941-d32f-46ee-a7a1-f326bf897453" />
       </ranges>
     </file>
   </component>
@@ -201,6 +103,7 @@
       <workItem from="1669285234445" duration="7638000" />
       <workItem from="1669379185997" duration="18834000" />
       <workItem from="1670401419792" duration="10895000" />
+      <workItem from="1670489380820" duration="8824000" />
     </task>
     <task id="LOCAL-00001" summary="Hey">
       <created>1669035408727</created>
